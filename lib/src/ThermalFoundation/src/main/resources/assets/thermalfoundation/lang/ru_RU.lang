@@ -1,0 +1,292 @@
+#ru_RU
+
+death.attack.blizz=%1$s встретил холодную судьбу!
+death.attack.cryotheum=%1$s замёрз досмерти!
+death.attack.cryotheum.player=%1$s замёрз досмерти, убегая от %2$s!
+death.attack.flux=%1$s был разодран флаксом!
+death.attack.flux.player=%1$s был зафлаксирован до смерти игроком %2$s!
+death.attack.pyrotheum=%1$s принял пиротеум за воду!
+death.attack.pyrotheum.player=%1$s сгорел заживо, убегая от %2$s!
+death.attack.mana=%1$s был разорван на части сырой маной!
+death.attack.mana.player=%1$s побежал не в то место, убегая от %2$s!
+
+entity.Blizz.name=Буран
+
+fluid.redstone=Дестабилизированный красный камень
+fluid.glowstone=Заряженный светящийся камень
+fluid.ender=Резонирующий эндериум
+fluid.pyrotheum=Пылающий пиротеум
+fluid.cryotheum=Ледяной криотеум
+fluid.mana=Изначальная мана
+fluid.steam=Пар
+fluid.coal=Разжиженный уголь
+
+gui.thermalfoundation.lexicon.study=Лексикон - Знания
+gui.thermalfoundation.lexicon.transmute=Лексикон - Превращения
+
+item.thermalfoundation.bucket.bucketRedstone.name=Ведро дестабилизированного красного камня
+item.thermalfoundation.bucket.bucketGlowstone.name=Ведро заряженного светящегося камня
+item.thermalfoundation.bucket.bucketEnder.name=Ведро резонирующего эндериума
+item.thermalfoundation.bucket.bucketPyrotheum.name=Ведро пылающего пиротеума
+item.thermalfoundation.bucket.bucketCryotheum.name=Ведро ледяного криотеума
+item.thermalfoundation.bucket.bucketMana.name=Ведро изначальной маны
+item.thermalfoundation.bucket.bucketCoal.name=Ведро разжиженного угля
+
+info.thermalfoundation.tome.lexicon.1=Преобразует предметы в их эквивалентные формы.
+info.thermalfoundation.tome.lexicon.2=ПКМ (открыть), чтобы изучить.
+info.thermalfoundation.tome.lexicon.3=Когда присядете, откройте, дабы обрести мудрость!
+info.thermalfoundation.tome.lexicon.4=ПКМ (открыть) для трансмутации предметов.
+info.thermalfoundation.tome.lexicon.5=Когда присядете, откройте, чтобы позабыть знания.
+item.thermalfoundation.tome.lexicon.name=Лексикон Forge
+item.thermalfoundation.tome.lexicon.empowered.name=Лексикон Forge (Активен)
+
+item.thermalfoundation.material.dustIron.name=Измельчённое железо
+item.thermalfoundation.material.dustGold.name=Измельчённое золото
+item.thermalfoundation.material.dustCoal.name=Измельчённый уголь
+item.thermalfoundation.material.dustCharcoal.name=Измельчённый древесный уголь
+item.thermalfoundation.material.dustObsidian.name=Измельчённый обсидиан
+
+item.thermalfoundation.material.nuggetIron.name=Железный самородок
+item.thermalfoundation.material.gearIron.name=Железная шестерня
+item.thermalfoundation.material.gearGold.name=Золотая шестерня
+
+item.thermalfoundation.material.dustSulfur.name=Сера
+item.thermalfoundation.material.dustNiter.name=Селитра
+
+item.thermalfoundation.material.crystalCinnabar.name=Киноварь
+
+item.thermalfoundation.material.dustCopper.name=Измельчённая медь
+item.thermalfoundation.material.dustTin.name=Измельчённое олово
+item.thermalfoundation.material.dustSilver.name=Измельчённое серебро
+item.thermalfoundation.material.dustLead.name=Измельчённый свинец
+item.thermalfoundation.material.dustNickel.name=Измельчённый никель
+item.thermalfoundation.material.dustPlatinum.name=Измельчённая платина
+item.thermalfoundation.material.dustMithril.name=Измельчённый мифрил
+item.thermalfoundation.material.dustElectrum.name=Электрумовая смесь
+item.thermalfoundation.material.dustInvar.name=Инваровая смесь
+item.thermalfoundation.material.dustBronze.name=Смесь сплава инженера
+item.thermalfoundation.material.dustSignalum.name=Синаловая смесь
+item.thermalfoundation.material.dustLumium.name=Ламиумовая смесь
+item.thermalfoundation.material.dustEnderium.name=Смесь эндериума
+
+item.thermalfoundation.material.ingotCopper.name=Медный слиток
+item.thermalfoundation.material.ingotTin.name=Оловянный слиток
+item.thermalfoundation.material.ingotSilver.name=Серебряный слиток
+item.thermalfoundation.material.ingotLead.name=Свинцовый слиток
+item.thermalfoundation.material.ingotNickel.name=Никелевый слиток
+item.thermalfoundation.material.ingotPlatinum.name=Платиновый слиток
+item.thermalfoundation.material.ingotMithril.name=Мифриловый слиток
+item.thermalfoundation.material.ingotElectrum.name=Электрумовый слиток
+item.thermalfoundation.material.ingotInvar.name=Инваровый слиток
+item.thermalfoundation.material.ingotBronze.name=Слиток сплава инженера
+item.thermalfoundation.material.ingotSignalum.name=Синаловый слиток
+item.thermalfoundation.material.ingotLumium.name=Ламиумовый слиток
+item.thermalfoundation.material.ingotEnderium.name=Слиток эндериума
+
+item.thermalfoundation.material.nuggetCopper.name=Медный самородок
+item.thermalfoundation.material.nuggetTin.name=Оловянный самородок
+item.thermalfoundation.material.nuggetSilver.name=Серебряный самородок
+item.thermalfoundation.material.nuggetLead.name=Свинцовый самородок
+item.thermalfoundation.material.nuggetNickel.name=Никелевый самородок
+item.thermalfoundation.material.nuggetPlatinum.name=Платиновый самородок
+item.thermalfoundation.material.nuggetMithril.name=Мифриловый самородок
+item.thermalfoundation.material.nuggetElectrum.name=Электрумовый самородок
+item.thermalfoundation.material.nuggetInvar.name=Инваровый самородок
+item.thermalfoundation.material.nuggetBronze.name=Самородок сплава инженера
+item.thermalfoundation.material.nuggetSignalum.name=Синаловый самородок
+item.thermalfoundation.material.nuggetLumium.name=Ламиумовый самородок
+item.thermalfoundation.material.nuggetEnderium.name=Самородок эндериума
+
+item.thermalfoundation.material.dustPyrotheum.name=Пыль пиротеума
+item.thermalfoundation.material.dustCryotheum.name=Пыль криотеума
+item.thermalfoundation.material.dustMana.name=Пыль маны
+
+item.thermalfoundation.material.gearCopper.name=Медная шестерня
+item.thermalfoundation.material.gearTin.name=Оловянная шестерня
+item.thermalfoundation.material.gearSilver.name=Серебряная шестерня
+item.thermalfoundation.material.gearLead.name=Свинцовая шестерня
+item.thermalfoundation.material.gearNickel.name=Никелевая шестерня
+item.thermalfoundation.material.gearPlatinum.name=Платиновая шестерня
+item.thermalfoundation.material.gearMithril.name=Мифриловая шестерня
+item.thermalfoundation.material.gearElectrum.name=Шестерня из электрума
+item.thermalfoundation.material.gearInvar.name=Инваровая шестерня
+item.thermalfoundation.material.gearBronze.name=Шестерня из сплава инженера
+item.thermalfoundation.material.gearSignalum.name=Синаловая шестерня
+item.thermalfoundation.material.gearLumium.name=Ламиумовая шестерня
+item.thermalfoundation.material.gearEnderium.name=Шестерня из эндериума
+
+item.thermalfoundation.material.rodBlizz.name=Бурановый стержень
+item.thermalfoundation.material.dustBlizz.name=Бурановый порошок
+
+item.thermalfoundation.armor.copperHelmet.name=Медный шлем
+item.thermalfoundation.armor.copperPlate.name=Медная кираса
+item.thermalfoundation.armor.copperLegs.name=Медные поножи
+item.thermalfoundation.armor.copperBoots.name=Медные ботинки
+
+item.thermalfoundation.armor.tinHelmet.name=Оловянный шлем
+item.thermalfoundation.armor.tinPlate.name=Оловянная кираса
+item.thermalfoundation.armor.tinLegs.name=Оловянные поножи
+item.thermalfoundation.armor.tinBoots.name=Оловянные ботинки
+
+item.thermalfoundation.armor.electrumHelmet.name=Электрумовый шлем
+item.thermalfoundation.armor.electrumPlate.name=Электрумовая кираса
+item.thermalfoundation.armor.electrumLegs.name=Электрумовые поножи
+item.thermalfoundation.armor.electrumBoots.name=Электрумовые ботинки
+
+item.thermalfoundation.armor.leadHelmet.name=Свинцовый шлем
+item.thermalfoundation.armor.leadPlate.name=Свинцовая кираса
+item.thermalfoundation.armor.leadLegs.name=Свинцовые поножи
+item.thermalfoundation.armor.leadBoots.name=Свинцовые ботинки
+
+item.thermalfoundation.armor.silverHelmet.name=Серебряный шлем
+item.thermalfoundation.armor.silverPlate.name=Серебряная кираса
+item.thermalfoundation.armor.silverLegs.name=Серебряные поножи
+item.thermalfoundation.armor.silverBoots.name=Серебряные ботинки
+
+item.thermalfoundation.armor.nickelHelmet.name=Никелевый шлем
+item.thermalfoundation.armor.nickelPlate.name=Никелевая кираса
+item.thermalfoundation.armor.nickelLegs.name=Никелевые поножи
+item.thermalfoundation.armor.nickelBoots.name=Никелевые ботинки
+
+item.thermalfoundation.armor.bronzeHelmet.name=Шлем из сплава инженера
+item.thermalfoundation.armor.bronzePlate.name=Кираса из сплава инженера
+item.thermalfoundation.armor.bronzeLegs.name=Поножи из сплава инженера
+item.thermalfoundation.armor.bronzeBoots.name=Ботинки из сплава инженера
+
+item.thermalfoundation.armor.invarHelmet.name=Инваровый шлем
+item.thermalfoundation.armor.invarPlate.name=Инваровая кираса
+item.thermalfoundation.armor.invarLegs.name=Инваровые поножи
+item.thermalfoundation.armor.invarBoots.name=Инваровые ботинки
+
+item.thermalfoundation.armor.platinumHelmet.name=Блестящий шлем
+item.thermalfoundation.armor.platinumPlate.name=Блестящая кираса
+item.thermalfoundation.armor.platinumLegs.name=Блестящие поножи
+item.thermalfoundation.armor.platinumBoots.name=Блестящие ботинки
+
+item.thermalfoundation.tool.copperSword.name=Медный меч
+item.thermalfoundation.tool.copperShovel.name=Медная лопата
+item.thermalfoundation.tool.copperPickaxe.name=Медная кирка
+item.thermalfoundation.tool.copperAxe.name=Медный топор
+item.thermalfoundation.tool.copperHoe.name=Медная мотыга
+item.thermalfoundation.tool.copperShears.name=Медные ножницы
+item.thermalfoundation.tool.copperFishingRod.name=Медная удочка
+item.thermalfoundation.tool.copperSickle.name=Медный серп
+item.thermalfoundation.tool.copperBow.name=Укреплённый медью лук
+
+item.thermalfoundation.tool.tinSword.name=Оловянный меч
+item.thermalfoundation.tool.tinShovel.name=Оловянная лопата
+item.thermalfoundation.tool.tinPickaxe.name=Оловянная кирка
+item.thermalfoundation.tool.tinAxe.name=Оловянный топор
+item.thermalfoundation.tool.tinHoe.name=Оловянная мотыга
+item.thermalfoundation.tool.tinShears.name=Оловянные ножницы
+item.thermalfoundation.tool.tinFishingRod.name=Оловянная удочка
+item.thermalfoundation.tool.tinSickle.name=Оловянный серп
+item.thermalfoundation.tool.tinBow.name=Укреплённый оловом лук
+
+item.thermalfoundation.tool.electrumSword.name=Электрумовый меч
+item.thermalfoundation.tool.electrumShovel.name=Электрумовая лопата
+item.thermalfoundation.tool.electrumPickaxe.name=Электрумовая кирка
+item.thermalfoundation.tool.electrumAxe.name=Электрумовый топор
+item.thermalfoundation.tool.electrumHoe.name=Электрумовая мотыга
+item.thermalfoundation.tool.electrumShears.name=Электрумовые ножницы
+item.thermalfoundation.tool.electrumFishingRod.name=Электрумовая удочка
+item.thermalfoundation.tool.electrumSickle.name=Электрумовый серп
+item.thermalfoundation.tool.electrumBow.name=Укреплённый электрумом лук
+
+item.thermalfoundation.tool.leadSword.name=Свинцовый меч
+item.thermalfoundation.tool.leadShovel.name=Свинцовая лопата
+item.thermalfoundation.tool.leadPickaxe.name=Свинцовая кирка
+item.thermalfoundation.tool.leadAxe.name=Свинцовый топор
+item.thermalfoundation.tool.leadHoe.name=Свинцовая мотыга
+item.thermalfoundation.tool.leadShears.name=Свинцовые ножницы
+item.thermalfoundation.tool.leadFishingRod.name=Свинцовая удочка
+item.thermalfoundation.tool.leadSickle.name=Свинцовый серп
+item.thermalfoundation.tool.leadBow.name=Укреплённый свинцом лук
+
+item.thermalfoundation.tool.silverSword.name=Серебряный меч
+item.thermalfoundation.tool.silverShovel.name=Серебряная лопата
+item.thermalfoundation.tool.silverPickaxe.name=Серебряная кирка
+item.thermalfoundation.tool.silverAxe.name=Серебряный топор
+item.thermalfoundation.tool.silverHoe.name=Серебряная мотыга
+item.thermalfoundation.tool.silverShears.name=Серебряные ножницы
+item.thermalfoundation.tool.silverFishingRod.name=Серебряная удочка
+item.thermalfoundation.tool.silverSickle.name=Серебряный серп
+item.thermalfoundation.tool.silverBow.name=Укреплённый серебром лук
+
+item.thermalfoundation.tool.nickelSword.name=Никелевый меч
+item.thermalfoundation.tool.nickelShovel.name=Никелевая лопата
+item.thermalfoundation.tool.nickelPickaxe.name=Никелевая кирка
+item.thermalfoundation.tool.nickelAxe.name=Никелевый топор
+item.thermalfoundation.tool.nickelHoe.name=Никелевая мотыга
+item.thermalfoundation.tool.nickelShears.name=Никелевые ножницы
+item.thermalfoundation.tool.nickelFishingRod.name=Никелевая удочка
+item.thermalfoundation.tool.nickelSickle.name=Никелевый серп
+item.thermalfoundation.tool.nickelBow.name=Укреплённый никелем лук
+
+item.thermalfoundation.tool.bronzeSword.name=Бронзовый меч
+item.thermalfoundation.tool.bronzeShovel.name=Бронзовая лопата
+item.thermalfoundation.tool.bronzePickaxe.name=Бронзовая кирка
+item.thermalfoundation.tool.bronzeAxe.name=Бронзовый топор
+item.thermalfoundation.tool.bronzeHoe.name=Бронзовая мотыга
+item.thermalfoundation.tool.bronzeShears.name=Бронзовые ножницы
+item.thermalfoundation.tool.bronzeFishingRod.name=Бронзовая удочка
+item.thermalfoundation.tool.bronzeSickle.name=Бронзовый серп
+item.thermalfoundation.tool.bronzeBow.name=Укреплённый бронзой лук
+
+item.thermalfoundation.tool.invarSword.name=Инваровый меч
+item.thermalfoundation.tool.invarShovel.name=Инваровая лопата
+item.thermalfoundation.tool.invarPickaxe.name=Инваровая кирка
+item.thermalfoundation.tool.invarAxe.name=Инваровый топор
+item.thermalfoundation.tool.invarHoe.name=Инваровая мотыга
+item.thermalfoundation.tool.invarShears.name=Инваровые ножницы
+item.thermalfoundation.tool.invarFishingRod.name=Инваровая удочка
+item.thermalfoundation.tool.invarSickle.name=Инваровый серп
+item.thermalfoundation.tool.invarBow.name=Укреплённый инваром лук
+
+item.thermalfoundation.tool.platinumSword.name=Блестящий меч
+item.thermalfoundation.tool.platinumShovel.name=Блестящая лопата
+item.thermalfoundation.tool.platinumPickaxe.name=Блестящая кирка
+item.thermalfoundation.tool.platinumAxe.name=Блестящий топор
+item.thermalfoundation.tool.platinumHoe.name=Блестящая мотыга
+item.thermalfoundation.tool.platinumShears.name=Блестящие ножницы
+item.thermalfoundation.tool.platinumFishingRod.name=Блестящая удочка
+item.thermalfoundation.tool.platinumSickle.name=Блестящий серп
+item.thermalfoundation.tool.platinumBow.name=Укреплённый платиной лук
+
+itemGroup.thermalfoundation.creativeTab=Thermal Foundation
+itemGroup.thermalfoundation.creativeTabTools=Thermal Foundation: Инструменты
+itemGroup.thermalfoundation.creativeTabArmor=Thermal Foundation: Броня
+
+tab.thermalfoundation.lexicon.study=Обратитесь к знаниям мира и измените Вашу личную судьбу.
+tab.thermalfoundation.lexicon.transmute=Превращайте эквивалентные предметы согласно тайному набору правил, установленным высшими силам.
+
+tile.thermalfoundation.fluid.redstone.name=Дестабилизированный красный камень
+tile.thermalfoundation.fluid.glowstone.name=Заряженный светящийся камень
+tile.thermalfoundation.fluid.ender.name=Резонирующий эндериум
+tile.thermalfoundation.fluid.pyrotheum.name=Пылающий пиротеум
+tile.thermalfoundation.fluid.cryotheum.name=Ледяной криотеум
+tile.thermalfoundation.fluid.mana.name=Изначальная мана
+tile.thermalfoundation.fluid.steam.name=Пар
+tile.thermalfoundation.fluid.coal.name=Разжиженный уголь
+
+tile.thermalfoundation.ore.copper.name=Медная руда
+tile.thermalfoundation.ore.tin.name=Оловянная руда
+tile.thermalfoundation.ore.silver.name=Серебряная руда
+tile.thermalfoundation.ore.lead.name=Свинцовая руда
+tile.thermalfoundation.ore.nickel.name=Никелевая руда
+tile.thermalfoundation.ore.platinum.name=Платиновая руда
+tile.thermalfoundation.ore.mithril.name=Мифриловая руда
+
+tile.thermalfoundation.storage.copper.name=Медный блок
+tile.thermalfoundation.storage.tin.name=Оловянный блок
+tile.thermalfoundation.storage.silver.name=Серебряный блок
+tile.thermalfoundation.storage.lead.name=Свинцовый блок
+tile.thermalfoundation.storage.nickel.name=Никелевый блок
+tile.thermalfoundation.storage.platinum.name=Платиновый блок
+tile.thermalfoundation.storage.mithril.name=Мифриловый блок
+tile.thermalfoundation.storage.electrum.name=Электрумовый блок
+tile.thermalfoundation.storage.invar.name=Инваровый блок
+tile.thermalfoundation.storage.bronze.name=Блок сплава инженера
+tile.thermalfoundation.storage.signalum.name=Синаловый блок
+tile.thermalfoundation.storage.lumium.name=Люмиумовый блок
+tile.thermalfoundation.storage.enderium.name=Блок эндериума

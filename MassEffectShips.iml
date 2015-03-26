@@ -1,21 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="MassEffectShips" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="com.yourname.modid" external.system.module.version="1.0" relativePaths="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
-    <output url="file://$MODULE_DIR$/build/classes/main" />
-    <output-test url="file://$MODULE_DIR$/build/classes/test" />
+<module relativePaths="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/api/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/api/resources" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
-    <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mod-buildcraft/buildcraft/6.4.3/10b5de2b2ed87c34428f7ae203f9529e8a511bef/buildcraft-6.4.3-api.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mod-buildcraft/buildcraft/6.4.3/507e2441f5f2719607b5ac20ede2e6315b6728ed/buildcraft-6.4.3-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mod-buildcraft/buildcraft/6.4.3/e16e35f5741bb7cce5b97e119b36ecb7b7b79139/buildcraft-6.4.3-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mcp.mobius.waila/Waila/1.5.9_dev1_1.7.10/4bf703cb81457c2bf962faf4ecce3b41a45df19e/Waila-1.5.9_dev1_1.7.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mcp.mobius.waila/Waila/1.5.9_dev1_1.7.10/2ca61e7cc5937b9394c0fb7820e8c6c043231741/Waila-1.5.9_dev1_1.7.10-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gameminers/glasspane/1.0/3dac19d4a688feb53fb4a7ce614669b506ca1d55/glasspane-1.0-dev.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gameminers/kitchensink/1.0/d2d7667e310f56a43ecd94aac28b03025438fe51/kitchensink-1.0-dev.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -499,6 +535,33 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/codechicken/NotEnoughItems/1.7.10-1.0.4.90/82c4ed91c013c7ce6369f43de164f6a1653a8455/NotEnoughItems-1.7.10-1.0.4.90-dev.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/codechicken/CodeChickenCore/1.7.10-1.0.4.35/b7165acdf6b414123d49bde2c9a92561cc33c669/CodeChickenCore-1.7.10-1.0.4.35-dev.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/codechicken/CodeChickenLib/1.7.10-1.1.1.106/e199afca5e00f778c8a7b87840af28a48913c91c/CodeChickenLib-1.7.10-1.1.1.106-dev.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
           <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors/2.11.0/8ccfb6541de179bb1c4d45cf414acee069b7f78b/scala-actors-2.11.0.jar!/" />
         </CLASSES>
         <JAVADOC>
@@ -667,6 +730,19 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/OpenModsLib-1.7.10-0.6-snapshot-323-deobf.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/lib/src/OpenModsLib/src/api/java" />
+          <root url="file://$MODULE_DIR$/lib/src/OpenModsLib/src/main/java" />
+          <root url="file://$MODULE_DIR$/lib/src/OpenModsLib/src/test/java" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>

@@ -1,0 +1,131 @@
+---- Minecraft Crash Report ----
+// Why is it breaking :(
+
+Time: 3/18/15 9:37 PM
+Description: Unexpected error
+
+java.lang.RuntimeException: Failed to create TE with class class com.octagon.airships.block.tileentity.TileEntityEezoCoreMultiblock
+	at openmods.block.OpenBlock.createTileEntity(OpenBlock.java:147)
+	at openmods.block.OpenBlock.createTileEntity(OpenBlock.java:123)
+	at net.minecraft.world.chunk.Chunk.func_150806_e(Chunk.java:933)
+	at net.minecraft.world.chunk.Chunk.func_150807_a(Chunk.java:718)
+	at net.minecraft.world.World.setBlock(World.java:519)
+	at net.minecraft.item.ItemBlock.placeBlockAt(ItemBlock.java:232)
+	at openmods.item.ItemOpenBlock.onItemUse(ItemOpenBlock.java:64)
+	at net.minecraft.item.ItemStack.tryPlaceItemIntoWorld(ItemStack.java:143)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:410)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1518)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2033)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1028)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:951)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+Caused by: java.lang.InstantiationException: com.octagon.airships.block.tileentity.TileEntityEezoCoreMultiblock
+	at java.lang.Class.newInstance(Class.java:427)
+	at openmods.block.OpenBlock.createTileEntity(OpenBlock.java:145)
+	... 21 more
+Caused by: java.lang.NoSuchMethodException: com.octagon.airships.block.tileentity.TileEntityEezoCoreMultiblock.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082)
+	at java.lang.Class.newInstance(Class.java:412)
+	... 22 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at openmods.block.OpenBlock.createTileEntity(OpenBlock.java:147)
+	at openmods.block.OpenBlock.createTileEntity(OpenBlock.java:123)
+	at net.minecraft.world.chunk.Chunk.func_150806_e(Chunk.java:933)
+	at net.minecraft.world.chunk.Chunk.func_150807_a(Chunk.java:718)
+	at net.minecraft.world.World.setBlock(World.java:519)
+	at net.minecraft.item.ItemBlock.placeBlockAt(ItemBlock.java:232)
+	at openmods.item.ItemOpenBlock.onItemUse(ItemOpenBlock.java:64)
+	at net.minecraft.item.ItemStack.tryPlaceItemIntoWorld(ItemStack.java:143)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:410)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1518)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player103'/199, l='MpServer', x=520.72, y=5.62, z=1516.63]]
+	Chunk stats: MultiplayerChunkCache: 624, 624
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (540,4,1513), Chunk: (at 12,0,9 in 33,94; contains blocks 528,0,1504 to 543,255,1519), Region: (1,2; contains chunks 32,64 to 63,95, blocks 512,0,1024 to 1023,255,1535)
+	Level time: 171903 game time, 171903 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 70 total; [EntityChicken['Chicken'/128, l='MpServer', x=566.44, y=4.00, z=1446.47], EntitySheep['Sheep'/129, l='MpServer', x=570.78, y=4.00, z=1511.38], EntityCow['Cow'/130, l='MpServer', x=568.88, y=4.00, z=1548.13], EntitySheep['Sheep'/131, l='MpServer', x=560.25, y=4.00, z=1561.44], EntitySheep['Sheep'/132, l='MpServer', x=571.22, y=4.00, z=1571.22], EntitySheep['Sheep'/133, l='MpServer', x=569.66, y=4.00, z=1582.22], EntityCow['Cow'/134, l='MpServer', x=573.94, y=4.00, z=1582.06], EntityCow['Cow'/136, l='MpServer', x=568.28, y=4.00, z=1588.47], EntitySheep['Sheep'/150, l='MpServer', x=590.97, y=4.00, z=1451.97], EntityPig['Pig'/151, l='MpServer', x=589.16, y=4.00, z=1447.16], EntityPig['Pig'/152, l='MpServer', x=583.69, y=4.00, z=1458.84], EntityPig['Pig'/153, l='MpServer', x=591.91, y=4.00, z=1540.13], EntityCow['Cow'/154, l='MpServer', x=579.31, y=4.00, z=1537.22], EntityCow['Cow'/155, l='MpServer', x=578.06, y=4.00, z=1551.13], EntitySheep['Sheep'/156, l='MpServer', x=573.19, y=4.00, z=1569.28], EntityPig['Pig'/157, l='MpServer', x=580.91, y=4.00, z=1579.28], EntitySheep['Sheep'/158, l='MpServer', x=598.78, y=4.00, z=1573.81], EntityCow['Cow'/159, l='MpServer', x=587.25, y=4.00, z=1587.38], EntityHorse['Horse'/33, l='MpServer', x=446.91, y=4.00, z=1458.38], EntityHorse['Horse'/34, l='MpServer', x=443.00, y=4.00, z=1476.94], EntityPig['Pig'/35, l='MpServer', x=455.84, y=4.00, z=1561.19], EntityChicken['Chicken'/36, l='MpServer', x=446.47, y=4.00, z=1556.56], EntitySheep['Sheep'/37, l='MpServer', x=447.88, y=4.00, z=1571.16], EntityPig['Pig'/40, l='MpServer', x=445.97, y=4.00, z=1463.06], EntitySheep['Sheep'/169, l='MpServer', x=601.06, y=4.00, z=1458.94], EntityPig['Pig'/41, l='MpServer', x=453.84, y=4.00, z=1502.84], EntityPig['Pig'/42, l='MpServer', x=466.91, y=4.00, z=1546.75], EntityCow['Cow'/171, l='MpServer', x=598.22, y=4.00, z=1564.19], EntityChicken['Chicken'/43, l='MpServer', x=465.47, y=4.00, z=1566.53], EntitySheep['Sheep'/173, l='MpServer', x=599.84, y=4.00, z=1571.81], EntityHorse['Horse'/48, l='MpServer', x=472.13, y=4.00, z=1469.38], EntityChicken['Chicken'/49, l='MpServer', x=477.41, y=4.00, z=1468.56], EntityPig['Pig'/50, l='MpServer', x=466.25, y=4.00, z=1480.81], EntityPig['Pig'/51, l='MpServer', x=473.19, y=4.00, z=1507.38], EntityPig['Pig'/52, l='MpServer', x=472.81, y=4.00, z=1521.13], EntityPig['Pig'/53, l='MpServer', x=466.13, y=4.00, z=1576.84], EntityCow['Cow'/54, l='MpServer', x=476.13, y=4.00, z=1582.97], EntityCow['Cow'/55, l='MpServer', x=475.03, y=4.00, z=1579.06], EntityCow['Cow'/56, l='MpServer', x=475.72, y=4.00, z=1591.34], EntityPig['Pig'/57, l='MpServer', x=477.03, y=4.00, z=1590.88], EntityChicken['Chicken'/58, l='MpServer', x=461.63, y=4.00, z=1587.59], EntityChicken['Chicken'/65, l='MpServer', x=480.59, y=4.00, z=1456.56], EntityPig['Pig'/66, l='MpServer', x=486.19, y=4.00, z=1472.41], EntityPig['Pig'/67, l='MpServer', x=480.97, y=4.00, z=1521.94], EntitySheep['Sheep'/68, l='MpServer', x=485.75, y=4.00, z=1546.75], EntityPig['Pig'/69, l='MpServer', x=492.41, y=4.00, z=1562.84], EntitySheep['Sheep'/70, l='MpServer', x=471.94, y=4.00, z=1547.03], EntityChicken['Chicken'/71, l='MpServer', x=482.44, y=4.00, z=1574.56], EntityClientPlayerMP['Player103'/199, l='MpServer', x=520.72, y=5.62, z=1516.63], EntitySheep['Sheep'/72, l='MpServer', x=490.88, y=4.00, z=1586.16], EntitySheep['Sheep'/75, l='MpServer', x=500.09, y=4.00, z=1457.09], EntityChicken['Chicken'/76, l='MpServer', x=500.44, y=4.00, z=1479.53], EntitySheep['Sheep'/77, l='MpServer', x=492.06, y=4.00, z=1571.94], EntityChicken['Chicken'/78, l='MpServer', x=502.59, y=4.00, z=1569.56], EntitySheep['Sheep'/79, l='MpServer', x=510.25, y=4.00, z=1581.66], EntitySheep['Sheep'/80, l='MpServer', x=496.94, y=4.00, z=1586.13], EntitySheep['Sheep'/87, l='MpServer', x=523.84, y=4.00, z=1447.28], EntityChicken['Chicken'/94, l='MpServer', x=538.34, y=4.00, z=1452.47], EntityChicken['Chicken'/95, l='MpServer', x=536.19, y=4.00, z=1458.22], EntitySheep['Sheep'/96, l='MpServer', x=539.25, y=4.00, z=1556.81], EntitySheep['Sheep'/97, l='MpServer', x=540.47, y=4.00, z=1556.78], EntitySheep['Sheep'/98, l='MpServer', x=536.22, y=4.00, z=1555.63], EntitySheep['Sheep'/99, l='MpServer', x=542.25, y=4.00, z=1566.38], EntityChicken['Chicken'/100, l='MpServer', x=528.41, y=4.00, z=1568.47], EntitySheep['Sheep'/101, l='MpServer', x=531.09, y=4.00, z=1574.81], EntityChicken['Chicken'/114, l='MpServer', x=554.47, y=4.00, z=1481.47], EntitySheep['Sheep'/115, l='MpServer', x=547.97, y=4.00, z=1551.09], EntitySheep['Sheep'/116, l='MpServer', x=558.81, y=4.00, z=1563.19], EntitySheep['Sheep'/117, l='MpServer', x=548.16, y=4.00, z=1581.09], EntitySheep['Sheep'/118, l='MpServer', x=551.06, y=4.00, z=1591.94]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2555)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:980)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_40, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 865265576 bytes (825 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1291 Minecraft Forge 10.13.2.1291 15 mods loaded, 15 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.85.1291} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.2.1291} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	NotEnoughItems{1.0.4.90} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.4.90-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CodeChickenCore{1.0.4.35} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenModsCore{0.6} [OpenModsCore] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MassEffectShips{1.7.10-0.1} [Mass Effect Ships Mod] (MassEffectShips) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Waila{1.5.8} [Waila] (Waila-1.5.9_dev1_1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenMods{0.6} [OpenMods] (OpenModsLib-1.7.10-0.6-snapshot-323-deobf.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Core{6.4.3} [BuildCraft] (buildcraft-6.4.3-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Transport{6.4.3} [BC Transport] (buildcraft-6.4.3-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Silicon{6.4.3} [BC Silicon] (buildcraft-6.4.3-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Builders{6.4.3} [BC Builders] (buildcraft-6.4.3-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Energy{6.4.3} [BC Energy] (buildcraft-6.4.3-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Factory{6.4.3} [BC Factory] (buildcraft-6.4.3-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenModsLib crash transformers: [stencil_patches:FINISHED],[movement_callback:FINISHED],[map_gen_fix:FINISHED],[gl_capabilities_hook:FINISHED],[player_render_hook:FINISHED]
+	Stencil buffer state: Function set: GL30, pool: internal, bits: 8
+	Stencil buffer state: Function set: GL30, pool: internal, bits: 8
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 780/PCIe/SSE2 GL version 4.5.0 NVIDIA 347.88, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

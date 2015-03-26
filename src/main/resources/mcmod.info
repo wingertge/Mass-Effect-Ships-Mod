@@ -1,0 +1,19 @@
+[{
+    "modid": "MassEffectShips",
+    "name": "Mass Effect Ships Mod",
+    "description": "Mass Effect Style Airship Mod",
+    "version": "0.1",
+    "mcversion": "1.7.10",
+    "url": "mods.octagon-studios.com/meships",
+    "updateUrl": "update.octagon-studios.com/mcmods/meships",
+    "authorList": [
+        "BenignBanana"
+    ],
+    "credits": "Inspired by: The Mass Effect Franchise, Archimedes' Ships",
+    "logoFile": "assets/masseffectships/logo.png",
+    "screenshots": [
+    ],
+    "parent": "",
+    "dependencies": [
+    ]
+}]

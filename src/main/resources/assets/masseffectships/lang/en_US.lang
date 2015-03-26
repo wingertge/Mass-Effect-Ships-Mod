@@ -1,0 +1,28 @@
+item.masseffectships.superConductingAlloy.name=Superconducting Alloy
+item.masseffectships.cfrcPlate.name=CFRC Plate
+item.masseffectships.probe.name=Probe
+item.masseffectships.probe.mining.name=§1Mining
+item.masseffectships.probe.gas.name=§fGas
+item.masseffectships.pressureVessel.name=Pressure Vessel
+
+tile.masseffectships.alloyMixer.name=Alloy Mixer
+tile.masseffectships.ceramicFormer.name=Ceramics Former
+tile.masseffectships.eezoCoreBase.name=Eezo Core Base
+tile.masseffectships.eezoCoreHull.name=Eezo Core Hull
+tile.masseffectships.refinedEezoBlock.name=Refined Eezo
+tile.masseffectships.launchPadController.name=Launch Pad Controller
+tile.masseffectships.launchControllerExtension.name=Launch Controller Processor
+tile.masseffectships.launchPad.name=Launch Pad
+
+masseffectships.gui.powerLevel=Power Level
+masseffectships.alloyMixerEnergyConfig=Alloy Smelter Energy Usage
+1
+masseffectships.gui.eezoCoreBase=Eezo Core Base
+masseffectships.gui.machineBase=Generic Machine
+masseffectships.gui.alloyMixer=Alloy Mixer
+masseffectships.gui.ceramicFormer=Ceramics Former
+
+masseffectships.misc.energyStorage=%s / %s RF
+masseffectships.misc.fluidStorage=%s: %s / %s mB
+masseffectships.misc.empty=§8Empty
+masseffectships.misc.radius=Radius

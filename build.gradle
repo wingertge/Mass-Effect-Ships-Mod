@@ -26,20 +26,20 @@ minecraft {
     runDir = "eclipse"
 }
 
+repositories {
+    maven { url = "http://chickenbones.net/maven/" }
+    maven { url = "http://dl.tsr.me/artifactory/libs-release-local" }
+    maven { url = "http://maven.tterrag.com" }
+    maven { url = "http://maven.ic2.player.to" }
+    maven { url = "http://mobiusstrip.eu/maven" }
+    maven { url= "http://mvn.gameminers.com/artifactory/repo" }
+}
+
 dependencies {
-    // you may put jars on which you depend on in ./libs
-    // or you may define them like so..
-    //compile "some.group:artifact:version:classifier"
-    //compile "some.group:artifact:version"
-      
-    // real examples
-    //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
-    //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
-
-    // for more info...
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
-
+    compile "com.mod-buildcraft:buildcraft:6.4.3:api"
+    compile "mcp.mobius.waila:Waila:1.5.9_dev1_1.7.10"
+    compile "com.gameminers:glasspane:1.0:dev"
+    compile "com.gameminers:kitchensink:1.0:dev"
 }
 
 processResources

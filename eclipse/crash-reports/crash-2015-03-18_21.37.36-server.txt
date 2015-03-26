@@ -1,0 +1,102 @@
+---- Minecraft Crash Report ----
+// I just don't know what went wrong :(
+
+Time: 3/18/15 9:37 PM
+Description: Ticking memory connection
+
+java.lang.RuntimeException: Failed to create TE with class class com.octagon.airships.block.tileentity.TileEntityEezoCoreMultiblock
+	at openmods.block.OpenBlock.createTileEntity(OpenBlock.java:147)
+	at openmods.block.OpenBlock.createTileEntity(OpenBlock.java:123)
+	at net.minecraft.world.chunk.Chunk.func_150806_e(Chunk.java:933)
+	at net.minecraft.world.chunk.Chunk.func_150807_a(Chunk.java:718)
+	at net.minecraft.world.World.setBlock(World.java:519)
+	at net.minecraft.item.ItemBlock.placeBlockAt(ItemBlock.java:232)
+	at openmods.item.ItemOpenBlock.onItemUse(ItemOpenBlock.java:64)
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:507)
+	at net.minecraft.item.ItemStack.tryPlaceItemIntoWorld(ItemStack.java:142)
+	at net.minecraft.server.management.ItemInWorldManager.activateBlockOrUseItem(ItemInWorldManager.java:422)
+	at net.minecraft.network.NetHandlerPlayServer.processPlayerBlockPlacement(NetHandlerPlayServer.java:593)
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:74)
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:122)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241)
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752)
+Caused by: java.lang.InstantiationException: com.octagon.airships.block.tileentity.TileEntityEezoCoreMultiblock
+	at java.lang.Class.newInstance(Class.java:427)
+	at openmods.block.OpenBlock.createTileEntity(OpenBlock.java:145)
+	... 19 more
+Caused by: java.lang.NoSuchMethodException: com.octagon.airships.block.tileentity.TileEntityEezoCoreMultiblock.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082)
+	at java.lang.Class.newInstance(Class.java:412)
+	... 20 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at openmods.block.OpenBlock.createTileEntity(OpenBlock.java:147)
+	at openmods.block.OpenBlock.createTileEntity(OpenBlock.java:123)
+	at net.minecraft.world.chunk.Chunk.func_150806_e(Chunk.java:933)
+	at net.minecraft.world.chunk.Chunk.func_150807_a(Chunk.java:718)
+	at net.minecraft.world.World.setBlock(World.java:519)
+	at net.minecraft.item.ItemBlock.placeBlockAt(ItemBlock.java:232)
+	at openmods.item.ItemOpenBlock.onItemUse(ItemOpenBlock.java:64)
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:507)
+	at net.minecraft.item.ItemStack.tryPlaceItemIntoWorld(ItemStack.java:142)
+	at net.minecraft.server.management.ItemInWorldManager.activateBlockOrUseItem(ItemInWorldManager.java:422)
+	at net.minecraft.network.NetHandlerPlayServer.processPlayerBlockPlacement(NetHandlerPlayServer.java:593)
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:74)
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:122)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@1631f53a
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_40, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 854781704 bytes (815 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1291 Minecraft Forge 10.13.2.1291 15 mods loaded, 15 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.85.1291} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.2.1291} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	NotEnoughItems{1.0.4.90} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.4.90-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CodeChickenCore{1.0.4.35} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenModsCore{0.6} [OpenModsCore] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MassEffectShips{1.7.10-0.1} [Mass Effect Ships Mod] (MassEffectShips) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Waila{1.5.8} [Waila] (Waila-1.5.9_dev1_1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenMods{0.6} [OpenMods] (OpenModsLib-1.7.10-0.6-snapshot-323-deobf.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Core{6.4.3} [BuildCraft] (buildcraft-6.4.3-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Transport{6.4.3} [BC Transport] (buildcraft-6.4.3-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Silicon{6.4.3} [BC Silicon] (buildcraft-6.4.3-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Builders{6.4.3} [BC Builders] (buildcraft-6.4.3-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Energy{6.4.3} [BC Energy] (buildcraft-6.4.3-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Factory{6.4.3} [BC Factory] (buildcraft-6.4.3-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenModsLib crash transformers: [stencil_patches:FINISHED],[movement_callback:FINISHED],[map_gen_fix:FINISHED],[gl_capabilities_hook:FINISHED],[player_render_hook:FINISHED]
+	Stencil buffer state: Function set: GL30, pool: internal, bits: 8
+	Stencil buffer state: Function set: GL30, pool: internal, bits: 8
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 1 / 8; [EntityPlayerMP['Player103'/199, l='New World', x=520.72, y=4.00, z=1516.63]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
