@@ -9,7 +9,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import openmods.api.IActivateAwareTile;
 import openmods.api.IBreakAwareTile;
-import openmods.api.INeighbourAwareTile;
 import openmods.sync.ISyncListener;
 import openmods.sync.ISyncableObject;
 import openmods.tileentity.SyncedTileEntity;
@@ -64,8 +63,8 @@ public class TileEntityMultiblockPart extends SyncedTileEntity implements ISyncL
 
     public boolean onNeighbourPlaced(Block block) {
         TileEntity tileEntity = worldObj.getTileEntity(base.getX(), base.getY(), base.getZ());
-        if(tileEntity != null && tileEntity instanceof TileEntityMultiblock && tileEntity instanceof INeighbourAwareTile) {
-            ((INeighbourAwareTile) tileEntity).onNeighbourChanged(block);
+        if(tileEntity != null && tileEntity instanceof TileEntityMultiblock && tileEntity instanceof INeighborPlacedAware) {
+            ((INeighborPlacedAware) tileEntity).neighborPlaced(block);
             return true;
         }
         return false;

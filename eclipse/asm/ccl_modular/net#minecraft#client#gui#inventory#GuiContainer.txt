@@ -314,14 +314,14 @@ public abstract class net/minecraft/client/gui/inventory/GuiContainer extends ne
     LINENUMBER 114 L24
     ALOAD 0
     ALOAD 9
-    INVOKESPECIAL net/minecraft/client/gui/inventory/GuiContainer.func_146977_a (Lnet/minecraft/inventory/Slot;)V
+    INVOKEVIRTUAL net/minecraft/client/gui/inventory/GuiContainer.func_146977_a (Lnet/minecraft/inventory/Slot;)V
    L25
     LINENUMBER 116 L25
     ALOAD 0
     ALOAD 9
     ILOAD 1
     ILOAD 2
-    INVOKESPECIAL net/minecraft/client/gui/inventory/GuiContainer.isMouseOverSlot (Lnet/minecraft/inventory/Slot;II)Z
+    INVOKEVIRTUAL net/minecraft/client/gui/inventory/GuiContainer.isMouseOverSlot (Lnet/minecraft/inventory/Slot;II)Z
     IFEQ L26
     ALOAD 9
     INVOKEVIRTUAL net/minecraft/inventory/Slot.func_111238_b ()Z
@@ -786,8 +786,8 @@ public abstract class net/minecraft/client/gui/inventory/GuiContainer extends ne
   // access flags 0x404
   protected abstract drawGuiContainerBackgroundLayer(FII)V
 
-  // access flags 0x2
-  private func_146977_a(Lnet/minecraft/inventory/Slot;)V
+  // access flags 0x1
+  public func_146977_a(Lnet/minecraft/inventory/Slot;)V
    L0
     LINENUMBER 217 L0
     ALOAD 1
@@ -1283,7 +1283,7 @@ public abstract class net/minecraft/client/gui/inventory/GuiContainer extends ne
     ALOAD 4
     ILOAD 1
     ILOAD 2
-    INVOKESPECIAL net/minecraft/client/gui/inventory/GuiContainer.isMouseOverSlot (Lnet/minecraft/inventory/Slot;II)Z
+    INVOKEVIRTUAL net/minecraft/client/gui/inventory/GuiContainer.isMouseOverSlot (Lnet/minecraft/inventory/Slot;II)Z
     IFEQ L5
    L6
     LINENUMBER 338 L6
@@ -2561,8 +2561,8 @@ public abstract class net/minecraft/client/gui/inventory/GuiContainer extends ne
     MAXSTACK = 5
     MAXLOCALS = 12
 
-  // access flags 0x2
-  private isMouseOverSlot(Lnet/minecraft/inventory/Slot;II)Z
+  // access flags 0x1
+  public isMouseOverSlot(Lnet/minecraft/inventory/Slot;II)Z
    L0
     LINENUMBER 657 L0
     ALOAD 0

@@ -1,9 +1,8 @@
 package com.octagon.airships.init;
 
 import com.octagon.airships.block.*;
-import com.octagon.airships.block.fluid.BlockLiquidDeuterium;
-import com.octagon.airships.block.item.ItemEezoCoreBase;
-import com.octagon.airships.block.item.ItemMachine;
+import com.octagon.airships.block.fluid.*;
+import com.octagon.airships.block.item.*;
 import com.octagon.airships.block.tileentity.*;
 import com.octagon.airships.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -41,4 +40,16 @@ public class ModBlocks implements BlockInstances {
 
     @RegisterBlock(name = "deuteriumLiquid")
     public static BlockLiquidDeuterium deuteriumLiquid;
+
+    @RegisterBlock(name = "helium3Liquid")
+    public static BlockLiquidHelium3 helium3Liquid;
+
+    @RegisterBlock(name = "antiprotons")
+    public static BlockAntiprotons antiprotons;
+
+    @RegisterBlock(name = "hydrogenLiquid")
+    public static BlockLiquidHydrogen hydrogenLiquid;
+
+    @RegisterBlock(name = "oxygenLiquid")
+    public static BlockLiquidOxygen oxygenLiquid;
 }

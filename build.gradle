@@ -61,3 +61,9 @@ processResources
         exclude 'mcmod.info'
     }
 }
+
+jar {
+    manifest {
+        attributes 'FMLAT': 'MassEffectShips_at.cfg'
+    }
+}

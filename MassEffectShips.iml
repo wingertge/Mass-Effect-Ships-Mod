@@ -55,11 +55,11 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1291/forgeSrc-1.7.10-10.13.2.1291.jar!/" />
+          <root url="jar://$MODULE_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1291/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -535,7 +535,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/codechicken/NotEnoughItems/1.7.10-1.0.4.90/82c4ed91c013c7ce6369f43de164f6a1653a8455/NotEnoughItems-1.7.10-1.0.4.90-dev.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/codechicken/NotEnoughItems/1.7.10-1.0.4.94/a5808513c10bef343aca63e970e28b40551f1eb/NotEnoughItems-1.7.10-1.0.4.94-dev.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

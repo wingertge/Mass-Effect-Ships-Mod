@@ -5,13 +5,13 @@
  R4wk, ZeuX, IngisKahn, bspkrs
  MCP Data version : unknown
 ****************************
+Found AccessTransformer in main resources: MassEffectShips_at.cfg
 :ideaModule
-Download http://mvn.gameminers.com/artifactory/repo/com/gameminers/glasspane/1.0/glasspane-1.0-dev.jar
-Download http://mvn.gameminers.com/artifactory/repo/com/gameminers/kitchensink/1.0/kitchensink-1.0-dev.jar
+Download http://chickenbones.net/maven/codechicken/NotEnoughItems/1.7.10-1.0.4.94/NotEnoughItems-1.7.10-1.0.4.94-dev.jar
 :ideaProject
 :ideaWorkspace
 :idea
 
 BUILD SUCCESSFUL
 
-Total time: 26.207 secs
+Total time: 1 mins 1.977 secs

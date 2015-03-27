@@ -33,11 +33,13 @@ public class MultiblockStructure extends SyncableObjectBase<MultiblockStructure>
         markDirty();
     }
 
+    @SuppressWarnings({"unchecked"})
     public void addBlocks(SyncableCoord... blocks) {
         this.blocks.addAll(Arrays.asList(blocks));
         markDirty();
     }
 
+    @SuppressWarnings({"unchecked", "SuspiciousMethodCalls"})
     public void removeBlocks(SyncableCoord... blocks) {
         this.blocks.removeAll(Arrays.asList(blocks));
         markDirty();
@@ -137,7 +139,7 @@ public class MultiblockStructure extends SyncableObjectBase<MultiblockStructure>
         base.readFromNBT(tag, "Base");
 
         blocks.clear();
-        NBTTagList blocksTag = tag.getTagList("Blocks", blocksLength);
+        NBTTagList blocksTag = tag.getTagList("Blocks", 10);
         for(int i = 0; i < blocksLength; i++) {
             SyncableCoord block = new SyncableCoord();
             block.readFromNBT(blocksTag.getCompoundTagAt(i), "Coord");

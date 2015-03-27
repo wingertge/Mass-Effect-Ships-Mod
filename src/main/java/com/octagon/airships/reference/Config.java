@@ -38,4 +38,11 @@ public class Config {
         @ConfigProperty(category = CATEGORY, name = "guideRenderDistanceSq", comment = "Squared render distance for eezo core guide")
         public static double EEZO_CORE_RENDER_DISTANCE_SQ = 2500;
     }
+
+    public static final class FluidStorage {
+        public static final String CATEGORY = "fluid-storage";
+
+        @ConfigProperty(category = CATEGORY, name = "launchPadFluidStorage", comment = "Max fluid storage in launch per launch pad (in mB)")
+        public static int LAUNCH_PAD = 4000;
+    }
 }

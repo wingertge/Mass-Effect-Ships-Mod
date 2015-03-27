@@ -4,8 +4,8 @@ import com.google.common.base.Preconditions;
 import com.google.common.collect.Sets;
 import com.octagon.airships.block.multiblock.MultiblockStructure;
 import com.octagon.airships.block.multiblock.TileEntityMultiblock;
-import com.octagon.airships.client.gui.machine.ContainerEezoCoreBase;
-import com.octagon.airships.client.gui.machine.GuiEezoCoreBase;
+import com.octagon.airships.client.gui.multiblock.ContainerEezoCoreBase;
+import com.octagon.airships.client.gui.multiblock.GuiEezoCoreBase;
 import com.octagon.airships.init.ModBlocks;
 import com.octagon.airships.reference.Config;
 import com.octagon.airships.sync.SyncableCoord;
@@ -34,7 +34,7 @@ import openmods.utils.render.GeometryUtils;
 
 import java.util.Set;
 
-public class TileEntityEezoCoreMultiblock extends TileEntityMultiblock implements IShapeable, IActivateAwareTile, ISyncListener, IHasGui, IRadiusChanger, IBreakAwareTile, IPlaceAwareTile {
+public class TileEntityEezoCoreMultiblock extends TileEntityMultiblock implements IShapeable, IActivateAwareTile, ISyncListener, IHasGui, IRadiusChanger, IBreakAwareTile, IPlaceAwareTile, INeighborPlacedAware {
 
     private Set<Coord> guideShape;
     private SyncableInt radius;
@@ -77,6 +77,7 @@ public class TileEntityEezoCoreMultiblock extends TileEntityMultiblock implement
     @Override
     public void rebuild() {
         removeMultiblock();
+        validateStructure();
     }
 
     public boolean shouldRenderGuide() {
@@ -319,5 +320,10 @@ public class TileEntityEezoCoreMultiblock extends TileEntityMultiblock implement
         if(!structure.isComplete()) setRadius(2);
 
         super.onBlockPlacedBy(player, side, stack, hitX, hitY, hitZ);
+    }
+
+    @Override
+    public void neighborPlaced(Block block) {
+        rebuild();
     }
 }

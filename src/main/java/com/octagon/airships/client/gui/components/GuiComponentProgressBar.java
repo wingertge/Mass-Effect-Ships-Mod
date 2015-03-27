@@ -3,6 +3,7 @@ package com.octagon.airships.client.gui.components;
 import com.octagon.airships.util.LogHelper;
 import javafx.geometry.Orientation;
 import net.minecraft.client.Minecraft;
+import net.minecraft.util.IIcon;
 import net.minecraft.util.ResourceLocation;
 import openmods.api.IValueReceiver;
 import openmods.gui.component.BaseComponent;
@@ -19,6 +20,8 @@ public class GuiComponentProgressBar extends BaseComponent {
     private int activeTextureY;
     private int backgroundTextureX;
     private int backgroundTextureY;
+    private IIcon backgroundIcon = null;
+    private IIcon activeIcon = null;
 
     public GuiComponentProgressBar(int x, int y, int width, int height, Orientation orientation, boolean invert) {
         super(x, y);
@@ -40,12 +43,22 @@ public class GuiComponentProgressBar extends BaseComponent {
         backgroundTextureY = y;
     }
 
+    public void setActiveTexture(IIcon icon) {
+        activeIcon = icon;
+    }
+
+    public void setBackgroundTexture(IIcon icon) {
+        backgroundIcon = icon;
+    }
+
     @Override
     public void render(Minecraft mc, int offsetX, int offsetY, int mouseX, int mouseY) {
         if(backgroundTexture != null) {
             mc.getTextureManager().bindTexture(backgroundTexture);
 
             drawTexturedModalRect(offsetX + x, offsetY + y, backgroundTextureX, backgroundTextureY, width, height);
+        } else if(backgroundIcon != null) {
+            drawTexturedModelRectFromIcon(offsetX + x, offsetY + y, backgroundIcon, width, height);
         }
         if(activeTexture != null) {
             mc.getTextureManager().bindTexture(activeTexture);
@@ -60,6 +73,18 @@ public class GuiComponentProgressBar extends BaseComponent {
                     int progressScaledVer = Math.round(height * progress);
                     if(!invert) drawTexturedModalRect(offsetX + x, offsetY + y + height - progressScaledVer, activeTextureX, activeTextureY + height - progressScaledVer, width, progressScaledVer);
                     else drawTexturedModalRect(offsetX + x, offsetY + y, activeTextureX, activeTextureY, width, progressScaledVer);
+            }
+        } else if(activeIcon != null) {
+            switch (orientation) {
+                case HORIZONTAL:
+                    int progressScaledHor = Math.round(width * progress);
+                    if(!invert) drawTexturedModelRectFromIcon(offsetX + x, offsetY + y, activeIcon, progressScaledHor, height);
+                    else drawTexturedModelRectFromIcon(offsetX + x + progressScaledHor, offsetY + y, activeIcon, progressScaledHor, height);
+                    return;
+                case VERTICAL:
+                    int progressScaledVer = Math.round(height * progress);
+                    if(!invert) drawTexturedModelRectFromIcon(offsetX + x, offsetY + y + height - progressScaledVer, activeIcon, width, progressScaledVer);
+                    else drawTexturedModelRectFromIcon(offsetX + x, offsetY + y, activeIcon, width, progressScaledVer);
             }
         }
     }

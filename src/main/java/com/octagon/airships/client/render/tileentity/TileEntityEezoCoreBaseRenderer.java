@@ -56,6 +56,11 @@ public class TileEntityEezoCoreBaseRenderer extends TileEntitySpecialRenderer {
         if(multiblock.isComplete()) {
             GL11.glPushMatrix();
 
+            GL11.glEnable(GL11.GL_DEPTH_TEST);
+            GL11.glDepthMask(true);
+            GL11.glEnable(GL11.GL_ALPHA_TEST);
+            GL11.glAlphaFunc(GL11.GL_GREATER, 0.1F);
+
             int diameter = multiblock.getRadius() * 2 + 1;
             GL11.glTranslated(x - multiblock.getRadius(), y + ((multiblock.getRadius() * 2 + 1) * 0.106), z + multiblock.getRadius() + 1);
             //GL11.glScaled(diameter, diameter, diameter);
@@ -101,7 +106,7 @@ public class TileEntityEezoCoreBaseRenderer extends TileEntitySpecialRenderer {
 
         TextureUtils.bindDefaultTerrainTexture();
 
-        GL11.glColor3ub((byte) (color >> 16), (byte) (color >> 8), (byte) (color >> 0));
+        GL11.glColor3ub((byte) (color >> 16), (byte) (color >> 8), (byte) (color));
         GL11.glEnable(GL11.GL_BLEND);
         GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE);
         GL11.glDisable(GL11.GL_LIGHTING);
