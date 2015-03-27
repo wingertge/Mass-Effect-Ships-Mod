@@ -26,15 +26,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdedbc7d-9f0e-4754-acfc-a55e5c68042a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/models/.mayaSwatches/NorCore_Ball_Diff.tga.swatch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/models/.mayaSwatches/NorCore_Floor_Diff.tga.swatch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/models/.mayaSwatches/NorCore_MidSection_Diff.tga.swatch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/gui/launchPadMultiblock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/gui/smelteryside.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MassEffectShips.iws" afterPath="$PROJECT_DIR$/MassEffectShips.iws" />
     </list>
     <ignored path="MassEffectShips.iws" />
@@ -806,7 +797,7 @@
       <workItem from="1427439405776" duration="25000" />
       <workItem from="1427439458997" duration="274000" />
       <workItem from="1427439877817" duration="43000" />
-      <workItem from="1427439944526" duration="737000" />
+      <workItem from="1427439944526" duration="752000" />
     </task>
     <task id="LOCAL-00001" summary="Model render glitch snapshot">
       <created>1427392548901</created>
@@ -820,11 +811,17 @@
       <option name="project" value="LOCAL" />
       <updated>1427440361368</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated gitignore (again)">
+      <created>1427440690247</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1427440690247</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309869000" />
+    <option name="totallyTimeSpent" value="309884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -876,7 +873,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Model render glitch snapshot" />
     <MESSAGE value="updated gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated gitignore" />
+    <MESSAGE value="updated gitignore (again)" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated gitignore (again)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
