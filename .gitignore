@@ -27,13 +27,6 @@ hs_err_pid*
 # Icon must end with two \r
 Icon
 
-eclipse
-.gradle
-gradle
-lib
-out
-build
-
 # Thumbnails
 ._*
 
