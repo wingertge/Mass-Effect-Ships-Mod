@@ -11,6 +11,11 @@ public class SlotProbe extends AirshipsSlot {
 
     @Override
     public boolean isItemValid(ItemStack stack) {
-        return stack.getItem() instanceof ItemProbe;
+        return stack.getItem() instanceof ItemProbe && ((ItemProbe) stack.getItem()).getType() != ItemProbe.Type.EMPTY;
+    }
+
+    @Override
+    public int getSlotStackLimit() {
+        return 1;
     }
 }

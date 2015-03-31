@@ -1,0 +1,10 @@
+<Root>
+	<EnergyGauge x:name="energyBar" xPos=9 yPos=8 height=42 energyStorage="{tileEntity.getEnergyStorage()}" />
+	<Slot x:class="Battery" id=0 xPos=8 yPos=53 />
+	<FluidGauge x:name="inputTank" xPos=63 yPos=8 width=14 height=42 tank="{tileEntity.getInputTank()}" />
+	<Slot x:class="LiquidContainer" id=1 xPos=61 yPos=52 />
+	<FluidGauge x:name="outputTank1" xPos=117 yPos=8 width=14 height=20 tank="{tileEntity.getOutputTank1()}" />
+	<FluidGauge x:name="outputTank2" xPos=117 yPos=30 width=14 height=20 tank="{tileEntity.getOutputTank2()}" />
+	<Slot x:class="LiquidContainer" id=2 xPos=30 yPos=40 />
+	<PlayerInventory />
+</Root>

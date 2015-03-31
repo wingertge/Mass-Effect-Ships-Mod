@@ -8,6 +8,8 @@ public class AirshipsFluid extends Fluid {
 
     public AirshipsFluid(String fluidName) {
         super(fluidName);
+
+        setUnlocalizedName(fluidName.replace('_', '.') + ".name");
     }
 
     public ItemFluidBucket getBucket() {

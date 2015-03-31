@@ -21,7 +21,7 @@ public class ContainerMachineBase<T extends TileEntityMachineBase> extends Conta
     private int lastMaxEnergyStored;
 
     public ContainerMachineBase(InventoryPlayer inventory, T machine) {
-        super(inventory, machine, machine);
+        super(inventory, machine.getInventory(), machine);
         this.machine = machine;
         addSlots();
 
@@ -29,7 +29,7 @@ public class ContainerMachineBase<T extends TileEntityMachineBase> extends Conta
     }
 
     protected void addSlots() {
-        this.addSlotToContainer(new SlotBattery(machine, 0, 8, 53));
+        this.addSlotToContainer(new SlotBattery(machine.getInventory(), 0, 8, 53));
     }
 
     @Override

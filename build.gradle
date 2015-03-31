@@ -16,6 +16,7 @@ buildscript {
 }
 
 apply plugin: 'forge'
+apply plugin: 'antlr'
 
 version = "0.1"
 group= "com.octagon.airships" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -40,6 +41,7 @@ dependencies {
     compile "mcp.mobius.waila:Waila:1.5.9_dev1_1.7.10"
     compile "com.gameminers:glasspane:1.0:dev"
     compile "com.gameminers:kitchensink:1.0:dev"
+    antlr "org.antlr:antlr4:4.5"
 }
 
 processResources

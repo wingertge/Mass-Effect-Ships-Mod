@@ -3,6 +3,7 @@ item.masseffectships.cfrcPlate.name=CFRC Plate
 item.masseffectships.probe.name=Probe
 item.masseffectships.probe.mining.name=§1Mining
 item.masseffectships.probe.gas.name=§fGas
+item.masseffectships.probe.empty.name=§8Empty
 item.masseffectships.pressureVessel.name=Pressure Vessel
 
 tile.masseffectships.alloyMixer.name=Alloy Mixer
@@ -13,16 +14,30 @@ tile.masseffectships.refinedEezoBlock.name=Refined Eezo
 tile.masseffectships.launchPadController.name=Launch Pad Controller
 tile.masseffectships.launchControllerExtension.name=Launch Controller Processor
 tile.masseffectships.launchPad.name=Launch Pad
+tile.masseffectships.deuteriumLiquid.name=Liquid Deuterium
+tile.masseffectships.helium3Liquid.name=Liquid Helium-3
+tile.masseffectships.antiprotons.name=Antiprotons
+tile.masseffectships.hydrogenLiquid.name=Liquid Hydrogen
+tile.masseffectships.oxygenLiquid.name=Liquid Oxygen
+tile.masseffectships.launchPadIO.name=Launch Pad IO Manager
+tile.masseffectships.deuteriumExtractor.name=Deuterium Extractor
+
+fluid.masseffectships.deuteriumLiquid.name=Liquid Deuterium
+fluid.masseffectships.helium3Liquid.name=Liquid Helium-3
+fluid.masseffectships.antiprotons.name=Antiprotons
+fluid.masseffectships.hydrogenLiquid.name=Liquid Hydrogen
+fluid.masseffectships.oxygenLiquid.name=Liquid Oxygen
 
 masseffectships.gui.powerLevel=Power Level
 masseffectships.alloyMixerEnergyConfig=Alloy Smelter Energy Usage
-1
 masseffectships.gui.eezoCoreBase=Eezo Core Base
 masseffectships.gui.machineBase=Generic Machine
 masseffectships.gui.alloyMixer=Alloy Mixer
 masseffectships.gui.ceramicFormer=Ceramics Former
+masseffectships.gui.fluidLevel=Fluid Level
 
 masseffectships.misc.energyStorage=%s / %s RF
 masseffectships.misc.fluidStorage=%s: %s / %s mB
-masseffectships.misc.empty=§8Empty
+masseffectships.misc.empty=Empty
 masseffectships.misc.radius=Radius
+masseffectships.misc.extendTooltip=§3Press <shift> for more information

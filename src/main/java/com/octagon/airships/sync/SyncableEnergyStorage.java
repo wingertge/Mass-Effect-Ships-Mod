@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 
-public class SyncableEnergyStorage extends SyncableObjectBase<SyncableEnergyStorage> implements IEnergyStorage {
+public class SyncableEnergyStorage extends SyncableObjectBase<SyncableEnergyStorage> implements IEnergyStorage, IMonitoredComposite {
     protected MonitoredInt energyStored;
     protected MonitoredInt maxEnergyStored;
     protected MonitoredInt maxReceive;
@@ -161,7 +161,8 @@ public class SyncableEnergyStorage extends SyncableObjectBase<SyncableEnergyStor
         markDirty();
     }
 
-    public <T> void subscribeListener(String name, IValueChangedListener<T> listener) {
+    @Override
+    public <T> void subscribe(String name, IValueChangedListener<T> listener, String... callChain) {
         Field[] fields = getClass().getDeclaredFields();
         for(Field field : getClass().getDeclaredFields()) {
             boolean implementsInterface = Arrays.asList(field.getType().getInterfaces()).contains(IMonitoredValue.class);
@@ -174,7 +175,8 @@ public class SyncableEnergyStorage extends SyncableObjectBase<SyncableEnergyStor
         }
     }
 
-    public <T> void unsubscribeListener(String name, IValueChangedListener<T> listener) {
+    @Override
+    public <T> void unsubscribe(String name, IValueChangedListener<T> listener, String... callChain) {
         for(Field field : SyncableEnergyStorage.class.getFields()) {
             boolean implementsInterface = Arrays.asList(field.getType().getInterfaces()).contains(IMonitoredValue.class);
             if(field.getName().equalsIgnoreCase(name) && implementsInterface)
@@ -183,6 +185,20 @@ public class SyncableEnergyStorage extends SyncableObjectBase<SyncableEnergyStor
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
                 }
+        }
+    }
+
+    @Override
+    public void forceUpdate() {
+        for(Field field : SyncableEnergyStorage.class.getFields()) {
+            boolean isValue = Arrays.asList(field.getType().getInterfaces()).contains(IMonitoredValue.class);
+            boolean isComposite = Arrays.asList(field.getType().getInterfaces()).contains(IMonitoredComposite.class);
+            try {
+                if(isValue) ((IMonitoredValue)field.get(this)).forceUpdate();
+                if(isComposite) ((IMonitoredComposite)field.get(this)).forceUpdate();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
         }
     }
 

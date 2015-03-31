@@ -1,23 +1,23 @@
 package com.octagon.airships.block.tileentity;
 
-import com.octagon.airships.MassEffectShips;
 import com.octagon.airships.block.item.ItemMachine;
-import com.octagon.airships.client.gui.machine.*;
+import com.octagon.airships.client.gui.machine.ContainerAlloyMixer;
+import com.octagon.airships.client.gui.machine.GuiAlloyMixer;
 import com.octagon.airships.recipe.RecipesAlloyMixer;
 import com.octagon.airships.reference.Config;
-import com.octagon.airships.reference.GUIs;
 import com.octagon.airships.sync.*;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentText;
-import openmods.api.IActivateAwareTile;
+import openmods.api.IHasGui;
 import openmods.gui.listener.IValueChangedListener;
 import openmods.sync.drops.StoreOnDrop;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
 
-public class TileEntityAlloyMixer extends TileEntityMachineBase implements IActivateAwareTile {
+public class TileEntityAlloyMixer extends TileEntityMachineBase implements IHasGui {
     //private ItemStack[] contents = new ItemStack[4];
     private SyncableItemStack battery;
 
@@ -35,7 +35,7 @@ public class TileEntityAlloyMixer extends TileEntityMachineBase implements IActi
     private boolean lastActive;
 
     public TileEntityAlloyMixer() {
-        super("Alloy Mixer");
+
     }
 
     @Override
@@ -105,74 +105,7 @@ public class TileEntityAlloyMixer extends TileEntityMachineBase implements IActi
         lastActive = isActive();
     }
 
-    @Override
-    public void setInventorySlotContents(int slot, ItemStack itemStack) {
-        if(slot == 0) {
-            super.setInventorySlotContents(slot, itemStack);
-            return;
-        }
-        if(slot > 4) return;
 
-        if(itemStack != null) {
-            if (itemStack.stackSize > getInventoryStackLimit())
-                itemStack.stackSize = getInventoryStackLimit();
-        }
-
-        getSlot(slot).set(itemStack);
-    }
-
-    @Override
-    public int getSizeInventory() {
-        return 4 + super.getSizeInventory();
-    }
-
-    @Override
-    public ItemStack getStackInSlot(int slot) {
-        if(slot == 0) return super.getStackInSlot(slot);
-
-        switch (slot) {
-            case 1:
-                return input1.get();
-            case 2:
-                return input2.get();
-            case 3:
-                return input3.get();
-            case 4:
-                return output.get();
-        }
-
-        return null;
-    }
-
-    @Override
-    public ItemStack getStackInSlotOnClosing(int slot) {
-        if(slot == 0) return super.getStackInSlotOnClosing(slot);
-
-        ItemStack itemStack = getSlot(slot).get() != null ? getSlot(slot).get().copy() : null;
-        getSlot(slot).set(null);
-
-        return itemStack;
-    }
-
-    @Override
-    public ItemStack decrStackSize(int slot, int amount) {
-        if(slot == 0) return super.decrStackSize(slot, amount);
-
-        if(slot > 4) return null;
-        SyncableItemStack item = getSlot(slot);
-
-        if(item.get() == null) return null;
-
-
-        if(item.get().stackSize <= amount) {
-            ItemStack itemStack = item.get().copy();
-            item.set(null);
-            return itemStack;
-        } else {
-            item.decreaseStackSize(amount);
-            return new ItemStack(item.get().getItem(), amount, item.get().getItemDamage());
-        }
-    }
 
     public void setMaxWork(int maxWork) {
         this.maxWork.set(maxWork);
@@ -240,7 +173,7 @@ public class TileEntityAlloyMixer extends TileEntityMachineBase implements IActi
 
     @Override
     public Object getClientGui(EntityPlayer player) {
-        return new GuiOpenAlloyMixer(new ContainerAlloyMixer(player.inventory, this));
+        return new GuiAlloyMixer(new ContainerAlloyMixer(player.inventory, this));
     }
 
     @Override
@@ -250,7 +183,7 @@ public class TileEntityAlloyMixer extends TileEntityMachineBase implements IActi
 
     public <T> void subscribeListener(String name, IValueChangedListener<T> listener) {
         if(name.equalsIgnoreCase("energyStored") || name.equalsIgnoreCase("maxEnergyStored") || name.equalsIgnoreCase("maxReceive") || name.equalsIgnoreCase("maxExtract")) {
-            energyStorage.subscribeListener(name, listener);
+            energyStorage.subscribe(name, listener);
         } else {
             for(Field field : getClass().getDeclaredFields()) {
                 boolean implementsInterface = Arrays.asList(field.getType().getInterfaces()).contains(IMonitoredValue.class);
@@ -268,5 +201,10 @@ public class TileEntityAlloyMixer extends TileEntityMachineBase implements IActi
     public boolean onBlockActivated(EntityPlayer player, int side, float hitX, float hitY, float hitZ) {
         player.addChatComponentMessage(new ChatComponentText("Meta: " + blockMetadata));
         return true;
+    }
+
+    @Override
+    public IInventory getInventory() {
+        return inventory;
     }
 }

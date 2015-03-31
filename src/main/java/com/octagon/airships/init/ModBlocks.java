@@ -17,6 +17,9 @@ public class ModBlocks implements BlockInstances {
     @RegisterBlock(name = "ceramicFormer", tileEntity = TileEntityCeramicFormer.class, itemBlock = ItemMachine.class)
     public static BlockCeramicFormer ceramicFormer;
 
+    @RegisterBlock(name = "deuteriumExtractor", tileEntity = TileEntityDeuteriumExtractor.class, itemBlock = ItemDeuteriumExtractor.class)
+    public static BlockDeuteriumExtractor deuteriumExtractor;
+
     @RegisterBlock(name = "eezoCoreBase", tileEntity = TileEntityEezoCoreMultiblock.class, itemBlock = ItemEezoCoreBase.class)
     public static BlockEezoCoreBase eezoCoreBase;
 
@@ -29,14 +32,17 @@ public class ModBlocks implements BlockInstances {
     @RegisterBlock(name = "guiTest", tileEntity = TileEntityGuiTest.class)
     public static BlockGuiTest guiTest;
 
-    @RegisterBlock(name = "launchPadController", tileEntity = TileEntityLaunchPadMultiblock.class)
+    @RegisterBlock(name = "launchPadController", itemBlock = ItemLaunchPadController.class,tileEntity = TileEntityLaunchPadMultiblock.class)
     public static BlockLaunchPadController launchPadController;
 
     @RegisterBlock(name = "launchControllerExtension", tileEntity = TileEntityMultiblockPart.class)
     public static BlockLaunchControllerExtension launchControllerExtension;
 
-    @RegisterBlock(name = "launchPad", tileEntity = TileEntityMultiblockPart.class)
+    @RegisterBlock(name = "launchPad", itemBlock = ItemLaunchPad.class, tileEntity = TileEntityLaunchPad.class)
     public static BlockLaunchPad launchPad;
+
+    @RegisterBlock(name = "launchPadIO", itemBlock = ItemLaunchPadIO.class, tileEntity = TileEntityLaunchPadIO.class)
+    public static BlockLaunchPadIO launchPadIO;
 
     @RegisterBlock(name = "deuteriumLiquid")
     public static BlockLiquidDeuterium deuteriumLiquid;

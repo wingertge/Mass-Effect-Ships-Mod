@@ -1,34 +1,41 @@
 package com.octagon.airships.block.tileentity;
 
+import cofh.api.energy.IEnergyReceiver;
 import com.google.common.collect.Sets;
 import com.octagon.airships.block.BlockLaunchControllerExtension;
 import com.octagon.airships.block.BlockLaunchPad;
 import com.octagon.airships.block.BlockLaunchPadController;
+import com.octagon.airships.block.BlockLaunchPadIO;
+import com.octagon.airships.block.fluid.LaunchPadFluidTank;
+import com.octagon.airships.block.inventory.LaunchPadInventory;
+import com.octagon.airships.block.item.ItemLaunchPadController;
 import com.octagon.airships.block.multiblock.MultiblockStructure;
 import com.octagon.airships.block.multiblock.TileEntityMultiblock;
 import com.octagon.airships.client.gui.multiblock.ContainerLaunchPadMultiblock;
 import com.octagon.airships.client.gui.multiblock.GuiLaunchPadMultiblock;
-import com.octagon.airships.init.ModFluids;
 import com.octagon.airships.reference.Config;
+import com.octagon.airships.sync.MonitoredTank;
 import com.octagon.airships.sync.SyncableCoord;
+import com.octagon.airships.sync.SyncableEnergyStorage;
+import com.octagon.airships.sync.SyncableSet;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ISidedInventory;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.ChunkPosition;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidStack;
-import net.minecraftforge.fluids.IFluidHandler;
 import openmods.api.IHasGui;
-import openmods.api.IValueProvider;
 import openmods.include.IncludeInterface;
 import openmods.inventory.GenericInventory;
 import openmods.inventory.IInventoryProvider;
-import openmods.inventory.TileEntityInventory;
-import openmods.liquids.SidedFluidHandler;
-import openmods.sync.*;
+import openmods.sync.ISyncListener;
+import openmods.sync.ISyncableObject;
+import openmods.sync.SyncableSides;
+import openmods.sync.drops.StoreOnDrop;
 import openmods.utils.BlockNotifyFlags;
 import openmods.utils.SidedInventoryAdapter;
 import openmods.utils.bitmap.BitMapUtils;
@@ -36,67 +43,57 @@ import openmods.utils.bitmap.IReadableBitMap;
 import openmods.utils.bitmap.IRpcDirectionBitMap;
 import openmods.utils.bitmap.IWriteableBitMap;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
-public class TileEntityLaunchPadMultiblock extends TileEntityMultiblock implements IInventoryProvider, IHasGui, ISyncListener, INeighborPlacedAware {
+public class TileEntityLaunchPadMultiblock extends TileEntityMultiblock implements IInventoryProvider, IHasGui, ISyncListener, INeighborPlacedAware, IEnergyReceiver {
     private MultiblockStructure structure;
     private int rebuildTimer;
-    private Set<SyncableCoord> controllers;
-    private Set<SyncableCoord> launchPads;
+    private SyncableSet<SyncableCoord> controllers;
+    private SyncableSet<SyncableCoord> launchPads;
+    private SyncableCoord io;
+    private GenericInventory coreInventory = registerInventoryCallback(new GenericInventory("launchPadCore", false, 1));
 
-    private SyncableTank tank1;
-    private SyncableTank tank2;
-    private SyncableSides fluid1Inputs;
-    private SyncableSides fluid2Inputs;
-    private SyncableSides probesInputs;
-    private SyncableSides fuelCanisterInputs;
-    private SyncableSides itemOutputs;
+    @StoreOnDrop(name = ItemLaunchPadController.ENERGY_STORAGE_TAG)
+    private SyncableEnergyStorage energyStorage;
 
-    private GenericInventory inventory = registerInventoryCallback(new TileEntityInventory(this, "launchPad", true, 7));
-    private SyncableInt launchPadCount;
-    private int lastLaunchPadCount = 1;
+    private LaunchPadInventory inventory = new LaunchPadInventory(new ArrayList<>(), this);
+    private LaunchPadFluidTank ghostTank1;
+    private LaunchPadFluidTank ghostTank2;
+
+    private SyncableSides batteryInputs;
 
     @IncludeInterface(ISidedInventory.class)
-    private SidedInventoryAdapter sided = new SidedInventoryAdapter(inventory);
+    private SidedInventoryAdapter sidedInventory = new SidedInventoryAdapter(coreInventory);
 
-    @IncludeInterface
-    private final IFluidHandler tankWrapper1 = new SidedFluidHandler.Drain(fluid1Inputs, tank1);
-
-    private final IFluidHandler tankWrapper2 = new SidedFluidHandler.Drain(fluid2Inputs, tank2);
+    private int lastSize = 1;
 
     public TileEntityLaunchPadMultiblock() {
         rebuildTimer = 2;
 
-        sided.registerSlot(1, fuelCanisterInputs, true, true);
-        sided.registerSlots(2, 4, itemOutputs, false, true);
-        sided.registerSlots(6, inventory.getSizeInventory() - 6, probesInputs, true, true);
-
         syncMap.addSyncListener(this);
+        sidedInventory.registerSlot(0, batteryInputs, true, true);
     }
 
     @Override
     protected void createSyncedFields() {
-        launchPadCount = new SyncableInt(1);
-
-        tank1 = new SyncableTank(Config.FluidStorage.LAUNCH_PAD, new FluidStack(ModFluids.liquidHydrogen, 1), new FluidStack(ModFluids.liquidHelium3, 1));
-        tank2 = new SyncableTank(Config.FluidStorage.LAUNCH_PAD, new FluidStack(ModFluids.liquidDeuterium, 1), new FluidStack(ModFluids.antiprotons, 1), new FluidStack(ModFluids.liquidOxygen, 1));
-        fluid1Inputs = new SyncableSides();
-        fluid2Inputs = new SyncableSides();
-        probesInputs = new SyncableSides();
-        fuelCanisterInputs = new SyncableSides();
-        itemOutputs = new SyncableSides();
+        energyStorage = new SyncableEnergyStorage(Config.EnergyStorage.LAUNCH_PAD_CONTROLLER);
+        io = new SyncableCoord();
         structure = new MultiblockStructure(new SyncableCoord(worldObj, xCoord, yCoord, zCoord));
-        controllers = Sets.newHashSet();
-        launchPads = Sets.newHashSet();
+        controllers = new SyncableSet<>(SyncableCoord.class);
+        launchPads = new SyncableSet<>(SyncableCoord.class);
 
-        for(int i = 0; i < 4; i++) {
-            fluid1Inputs.set(ForgeDirection.getOrientation(i + 2), true);
-            fluid2Inputs.set(ForgeDirection.getOrientation(i + 2), true);
-            probesInputs.set(ForgeDirection.getOrientation(i + 2), true);
-            itemOutputs.set(ForgeDirection.getOrientation(i + 2), true);
+        batteryInputs = new SyncableSides();
+
+        for(int i = 0; i < 6; i++) {
+            batteryInputs.set(ForgeDirection.getOrientation(i), true);
         }
-        fuelCanisterInputs.set(ForgeDirection.DOWN, true);
+
+        ghostTank1 = new LaunchPadFluidTank(1, new ArrayList<>());
+        ghostTank2 = new LaunchPadFluidTank(2, new ArrayList<>());
     }
 
     @Override
@@ -106,7 +103,7 @@ public class TileEntityLaunchPadMultiblock extends TileEntityMultiblock implemen
 
     @Override
     public boolean isComplete() {
-        return false;
+        return structure.isComplete();
     }
 
     @Override
@@ -114,8 +111,9 @@ public class TileEntityLaunchPadMultiblock extends TileEntityMultiblock implemen
         if(worldObj.isRemote) return;
 
         breakStructure();
-        assembleRecursive(controllers, launchPads, Sets.newHashSet(), xCoord, yCoord, zCoord);
-        if(launchPads.size() >= 1) completeStructure();
+        assembleRecursive(controllers, launchPads, io, Sets.newHashSet(), xCoord, yCoord, zCoord);
+        if(launchPads.size() >= 1 && worldObj.getTileEntity(io.getX(), io.getY(), io.getZ()) != null && worldObj.getTileEntity(io.getX(), io.getY(), io.getZ()) instanceof TileEntityLaunchPadIO)
+            completeStructure();
     }
 
     private void breakStructure() {
@@ -123,9 +121,9 @@ public class TileEntityLaunchPadMultiblock extends TileEntityMultiblock implemen
 
         structure.getBlocks().forEach(a -> {
             TileEntity tileEntity = worldObj.getTileEntity(a.getX(), a.getY(), a.getZ());
-            if(tileEntity != null && tileEntity instanceof TileEntityMultiblockPart) {
-                ((TileEntityMultiblockPart)tileEntity).setBase(new SyncableCoord(worldObj, xCoord, yCoord, zCoord));
-                ((TileEntityMultiblockPart)tileEntity).setStructure(structure);
+            if (tileEntity != null && tileEntity instanceof TileEntityMultiblockPart) {
+                ((TileEntityMultiblockPart) tileEntity).setBase(new SyncableCoord(worldObj, xCoord, yCoord, zCoord));
+                ((TileEntityMultiblockPart) tileEntity).setStructure(structure);
             }
             worldObj.setBlockMetadataWithNotify(a.getX(), a.getY(), a.getZ(), 0, BlockNotifyFlags.ALL);
         });
@@ -135,6 +133,7 @@ public class TileEntityLaunchPadMultiblock extends TileEntityMultiblock implemen
         worldObj.setBlockMetadataWithNotify(xCoord, yCoord, zCoord, 0, BlockNotifyFlags.ALL);
         controllers.clear();
         launchPads.clear();
+        io.assign(new SyncableCoord());
 
         if(!worldObj.isRemote) sync();
     }
@@ -146,13 +145,14 @@ public class TileEntityLaunchPadMultiblock extends TileEntityMultiblock implemen
         Set<SyncableCoord> blocks = Sets.newHashSet();
         blocks.addAll(controllers);
         blocks.addAll(launchPads);
+        blocks.add(io);
         structure.setBlocks(blocks);
         structure.setComplete(true);
 
         structure.getBlocks().stream().forEach(a -> {
             TileEntity tileEntity = worldObj.getTileEntity(a.getX(), a.getY(), a.getZ());
-            if(tileEntity != null && tileEntity instanceof TileEntityMultiblockPart) {
-                TileEntityMultiblockPart part = (TileEntityMultiblockPart)tileEntity;
+            if (tileEntity != null && tileEntity instanceof TileEntityMultiblockPart) {
+                TileEntityMultiblockPart part = (TileEntityMultiblockPart) tileEntity;
                 part.setBase(new SyncableCoord(worldObj, xCoord, yCoord, zCoord));
                 part.setStructure(structure);
             }
@@ -163,7 +163,12 @@ public class TileEntityLaunchPadMultiblock extends TileEntityMultiblock implemen
         worldObj.setBlockMetadataWithNotify(xCoord, yCoord, zCoord, 1, BlockNotifyFlags.ALL);
         worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
 
-        launchPadCount.set(launchPads.size());
+        List<TileEntityLaunchPad> tileEntities = launchPads.parallelStream().filter(a -> worldObj.getTileEntity(a.getX(), a.getY(), a.getZ()) != null &&
+                worldObj.getTileEntity(a.getX(), a.getY(), a.getZ()) instanceof TileEntityLaunchPad)
+                .map(a -> (TileEntityLaunchPad) worldObj.getTileEntity(a.getX(), a.getY(), a.getZ())).collect(Collectors.toList());
+        inventory.setLaunchPads(tileEntities);
+        ghostTank1.setLaunchPads(tileEntities);
+        ghostTank2.setLaunchPads(tileEntities);
 
         if(!worldObj.isRemote) sync();
     }
@@ -176,19 +181,46 @@ public class TileEntityLaunchPadMultiblock extends TileEntityMultiblock implemen
 
     @Override
     public void updateEntity() {
+        if(!worldObj.isRemote) sync();
+
         if(rebuildTimer != 0) {
             rebuildTimer--;
             if(rebuildTimer == 0) rebuild();
         }
 
-        if(lastLaunchPadCount != launchPadCount.get()) {
-            NBTTagCompound compound = new NBTTagCompound();
-            inventory.writeToNBT(compound);
-            inventory.clearAndSetSlotCount(6 + launchPadCount.get());
-            compound.setInteger("size", 6 + launchPadCount.get());
-            inventory.readFromNBT(compound);
+        List<TileEntityLaunchPad> tileEntities = launchPads.parallelStream().filter(a -> worldObj.getTileEntity(a.getX(), a.getY(), a.getZ()) != null &&
+                worldObj.getTileEntity(a.getX(), a.getY(), a.getZ()) instanceof TileEntityLaunchPad)
+                .map(a -> (TileEntityLaunchPad) worldObj.getTileEntity(a.getX(), a.getY(), a.getZ())).collect(Collectors.toList());
 
-            lastLaunchPadCount = launchPadCount.get();
+        if(lastSize != launchPads.size() && isComplete()) {
+            inventory.setLaunchPads(tileEntities);
+            inventory.setIOBlock((TileEntityLaunchPadIO) worldObj.getTileEntity(io.getX(), io.getY(), io.getZ()));
+            ghostTank1.setLaunchPads(tileEntities);
+            ghostTank2.setLaunchPads(tileEntities);
+            lastSize = launchPads.size();
+        }
+
+        if(isComplete()) {
+            tileEntities.stream().filter(a -> a.getCurrentWork() >= a.getMaxWork()).forEach(a -> {
+                ItemStack itemResult = a.getItemResult();
+                FluidStack fluidResult = a.getFluidResult();
+                if (itemResult != null) {
+                    if (coreInventory.getStackInSlot(3) == null) {
+                        coreInventory.setInventorySlotContents(3, itemResult);
+                        a.setCurrentWork(0);
+                    } else if (coreInventory.getStackInSlot(3).getItem().equals(itemResult.getItem()) &&
+                            coreInventory.getStackInSlot(3).stackSize + itemResult.stackSize <= itemResult.getItem().getItemStackLimit(itemResult)) {
+                        coreInventory.getStackInSlot(3).stackSize += itemResult.stackSize;
+                        a.setCurrentWork(0);
+                    }
+                }
+                if (fluidResult != null) {
+                    if (getOutputTank().fill(fluidResult, false) == fluidResult.amount) {
+                        getOutputTank().fill(fluidResult, true);
+                        a.setCurrentWork(0);
+                    }
+                }
+            });
         }
 
         super.updateEntity();
@@ -204,84 +236,43 @@ public class TileEntityLaunchPadMultiblock extends TileEntityMultiblock implemen
         this.structure.assign(structure);
     }
 
-    private void assembleRecursive(Set<SyncableCoord> controllers, Set<SyncableCoord> launchPads, HashSet<ChunkPosition> set, int x, int y, int z) {
+    private void assembleRecursive(Set<SyncableCoord> controllers, Set<SyncableCoord> launchPads, SyncableCoord io, HashSet<ChunkPosition> set, int x, int y, int z) {
         ChunkPosition pos = new ChunkPosition(x, y, z);
         if (set.contains(pos)) return;
 
         set.add(pos);
         Block block = worldObj.getBlock(x, y, z);
-        if (!(block instanceof BlockLaunchControllerExtension || block instanceof BlockLaunchPadController || block instanceof BlockLaunchPad)) return;
+        if (!(block instanceof BlockLaunchControllerExtension || block instanceof BlockLaunchPadController || block instanceof BlockLaunchPad || block instanceof BlockLaunchPadIO)) return;
 
         SyncableCoord coord = new SyncableCoord(worldObj, x, y, z);
         if(block instanceof BlockLaunchPad)
             launchPads.add(coord);
-        else
+        else if(block instanceof BlockLaunchControllerExtension)
             controllers.add(coord);
+        else if(block instanceof BlockLaunchPadIO) {
+            io.assign(coord);
+        }
 
         TileEntity tileEntity = worldObj.getTileEntity(x, y, z);
         if(tileEntity != null && tileEntity instanceof TileEntityMultiblockPart) {
             ((TileEntityMultiblockPart) tileEntity).setBase(new SyncableCoord(worldObj, xCoord, yCoord, zCoord));
         }
 
-        assembleRecursive(controllers, launchPads, set, x - 1, y, z);
-        assembleRecursive(controllers, launchPads, set, x, y - 1, z);
-        assembleRecursive(controllers, launchPads, set, x, y, z - 1);
-        assembleRecursive(controllers, launchPads, set, x + 1, y, z);
-        assembleRecursive(controllers, launchPads, set, x, y + 1, z);
-        assembleRecursive(controllers, launchPads, set, x, y, z + 1);
+        assembleRecursive(controllers, launchPads, io, set, x - 1, y, z);
+        assembleRecursive(controllers, launchPads, io, set, x, y - 1, z);
+        assembleRecursive(controllers, launchPads, io, set, x, y, z - 1);
+        assembleRecursive(controllers, launchPads, io, set, x + 1, y, z);
+        assembleRecursive(controllers, launchPads, io, set, x, y + 1, z);
+        assembleRecursive(controllers, launchPads, io, set, x, y, z + 1);
     }
 
     @Override
     public IInventory getInventory() {
+        return coreInventory;
+    }
+
+    public IInventory getGhostInventory() {
         return inventory;
-    }
-
-    public IReadableBitMap<ForgeDirection> getReadableFluid1Inputs() {
-        return fluid1Inputs;
-    }
-
-    public IWriteableBitMap<ForgeDirection> getWritableFluid1Inputs() {
-        return BitMapUtils.createRpcAdapter(createRpcProxy(fluid1Inputs, IRpcDirectionBitMap.class));
-    }
-
-    public IReadableBitMap<ForgeDirection> getReadableFluid2Inputs() {
-        return fluid2Inputs;
-    }
-
-    public IWriteableBitMap<ForgeDirection> getWritableFluid2Inputs() {
-        return BitMapUtils.createRpcAdapter(createRpcProxy(fluid2Inputs, IRpcDirectionBitMap.class));
-    }
-
-    public IReadableBitMap<ForgeDirection> getReadableFuelCanisterInputs() {
-        return fuelCanisterInputs;
-    }
-
-    public IWriteableBitMap<ForgeDirection> getWritableFuelCanisterInputs() {
-        return BitMapUtils.createRpcAdapter(createRpcProxy(fuelCanisterInputs, IRpcDirectionBitMap.class));
-    }
-
-    public IReadableBitMap<ForgeDirection> getReadableItemOutputs() {
-        return itemOutputs;
-    }
-
-    public IWriteableBitMap<ForgeDirection> getWritableItemOutputs() {
-        return BitMapUtils.createRpcAdapter(createRpcProxy(itemOutputs, IRpcDirectionBitMap.class));
-    }
-
-    public IReadableBitMap<ForgeDirection> getReadableProbeInputs() {
-        return probesInputs;
-    }
-
-    public IWriteableBitMap<ForgeDirection> getWritableProbeInputs() {
-        return BitMapUtils.createRpcAdapter(createRpcProxy(probesInputs, IRpcDirectionBitMap.class));
-    }
-
-    public IValueProvider<FluidStack> getFluidProvider1() {
-        return tank1;
-    }
-
-    public IValueProvider<FluidStack> getFluidProvider2() {
-        return tank2;
     }
 
     @Override
@@ -302,13 +293,11 @@ public class TileEntityLaunchPadMultiblock extends TileEntityMultiblock implemen
     @Override
     public void writeToNBT(NBTTagCompound tag) {
         super.writeToNBT(tag);
-        inventory.writeToNBT(tag);
     }
 
     @Override
     public void readFromNBT(NBTTagCompound tag) {
         super.readFromNBT(tag);
-        inventory.readFromNBT(tag);
     }
 
     @Override
@@ -318,5 +307,63 @@ public class TileEntityLaunchPadMultiblock extends TileEntityMultiblock implemen
     @Override
     public void neighborPlaced(Block block) {
         rebuild();
+    }
+
+    @Override
+    public int receiveEnergy(ForgeDirection from, int maxReceive, boolean simulate) {
+        return energyStorage.receiveEnergy(maxReceive, simulate);
+    }
+
+    @Override
+    public int getEnergyStored(ForgeDirection from) {
+        return energyStorage.getEnergyStored();
+    }
+
+    @Override
+    public int getMaxEnergyStored(ForgeDirection from) {
+        return energyStorage.getMaxEnergyStored();
+    }
+
+    @Override
+    public boolean canConnectEnergy(ForgeDirection from) {
+        return true;
+    }
+
+    public SyncableEnergyStorage getEnergyStorage() {
+        return energyStorage;
+    }
+
+    public IInventory getCoreInventory() {
+        return coreInventory;
+    }
+
+    public MonitoredTank getTank(int id) {
+        switch (id) {
+            case 0: return getOutputTank();
+            case 1: return ghostTank1;
+            case 2: return ghostTank2;
+        }
+        return getOutputTank();
+    }
+
+    public boolean extractEnergy(int amount) {
+        boolean result = energyStorage.extractEnergy(amount, true) == amount;
+        if(result) energyStorage.extractEnergy(amount, false);
+        return result;
+    }
+
+    public MonitoredTank getOutputTank() {
+        TileEntity tileEntity = worldObj.getTileEntity(io.getX(), io.getY(), io.getZ());
+        if(tileEntity != null && tileEntity instanceof TileEntityLaunchPadIO)
+            return ((TileEntityLaunchPadIO) tileEntity).getOutputTank();
+        return null;
+    }
+
+    public IReadableBitMap<ForgeDirection> getReadableBatteryInput() {
+        return batteryInputs;
+    }
+
+    public IWriteableBitMap<ForgeDirection> getWritableBatteryInput() {
+        return BitMapUtils.createRpcAdapter(createRpcProxy(batteryInputs, IRpcDirectionBitMap.class));
     }
 }

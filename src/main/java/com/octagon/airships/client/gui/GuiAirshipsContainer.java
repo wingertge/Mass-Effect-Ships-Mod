@@ -26,4 +26,12 @@ public abstract class GuiAirshipsContainer<T extends ContainerBase<? extends ISy
     public boolean isMouseOverSlot (Slot slot, int mouseX, int mouseY) {
         return (!(slot instanceof AirshipsSlot) || ((AirshipsSlot) slot).getActive()) && super.isMouseOverSlot(slot, mouseX, mouseY);
     }
+
+    public void setXSize(int size) {
+        xSize = size;
+    }
+
+    public void setYSize(int size) {
+        ySize = size;
+    }
 }

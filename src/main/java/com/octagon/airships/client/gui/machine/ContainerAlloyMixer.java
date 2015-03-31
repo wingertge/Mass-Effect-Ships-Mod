@@ -23,10 +23,10 @@ public class ContainerAlloyMixer extends ContainerMachineBase<TileEntityAlloyMix
     @Override
     protected void addSlots() {
         super.addSlots();
-        this.addSlotToContainer(new SlotInput(machine, 1, 60, 16));
-        this.addSlotToContainer(new SlotInput(machine, 2, 81, 16));
-        this.addSlotToContainer(new SlotInput(machine, 3, 102, 16));
-        this.addSlotToContainer(new SlotOutput(machine, 4, 81, 53));
+        this.addSlotToContainer(new SlotInput(machine.getInventory(), 1, 60, 16));
+        this.addSlotToContainer(new SlotInput(machine.getInventory(), 2, 81, 16));
+        this.addSlotToContainer(new SlotInput(machine.getInventory(), 3, 102, 16));
+        this.addSlotToContainer(new SlotOutput(machine.getInventory(), 4, 81, 53));
     }
 
     @Override

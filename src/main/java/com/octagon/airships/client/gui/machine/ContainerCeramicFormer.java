@@ -26,9 +26,9 @@ public class ContainerCeramicFormer extends ContainerMachineBase<TileEntityCeram
     @Override
     protected void addSlots() {
         super.addSlots();
-        this.addSlotToContainer(new SlotCFRCInput(machine, 1, 62, 19));
-        this.addSlotToContainer(new SlotCeramicFormerInput(machine, 2, 62, 44));
-        this.addSlotToContainer(new SlotOutput(machine, 3, 108, 32));
+        this.addSlotToContainer(new SlotCFRCInput(machine.getInventory(), 1, 62, 19));
+        this.addSlotToContainer(new SlotCeramicFormerInput(machine.getInventory(), 2, 62, 44));
+        this.addSlotToContainer(new SlotOutput(machine.getInventory(), 3, 108, 32));
     }
 
     @Override

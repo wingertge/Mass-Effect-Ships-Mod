@@ -3,41 +3,56 @@ package com.octagon.airships.block.tileentity;
 import com.octagon.airships.MassEffectShips;
 import com.octagon.airships.block.item.ItemMachine;
 import com.octagon.airships.client.gui.machine.ContainerCeramicFormer;
-import com.octagon.airships.client.gui.machine.GuiOpenCeramicFormer;
+import com.octagon.airships.client.gui.machine.GuiCeramicFormer;
 import com.octagon.airships.recipe.RecipesCeramicFormer;
 import com.octagon.airships.reference.Config;
 import com.octagon.airships.reference.GUIs;
 import com.octagon.airships.sync.IMonitoredValue;
 import com.octagon.airships.sync.MonitoredInt;
 import com.octagon.airships.sync.SyncableEnergyStorage;
-import com.octagon.airships.sync.SyncableItemStack;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.util.ForgeDirection;
+import openmods.api.IHasGui;
 import openmods.gui.listener.IValueChangedListener;
+import openmods.include.IncludeInterface;
+import openmods.inventory.GenericInventory;
+import openmods.inventory.TileEntityInventory;
 import openmods.sync.SyncableBoolean;
-import openmods.sync.SyncableInt;
+import openmods.sync.SyncableSides;
 import openmods.sync.drops.StoreOnDrop;
+import openmods.utils.SidedInventoryAdapter;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
 
-public class TileEntityCeramicFormer extends TileEntityMachineBase {
+public class TileEntityCeramicFormer extends TileEntityMachineBase implements IHasGui {
 
     @StoreOnDrop(name = ItemMachine.ENERGY_STORAGE_TAG)
     private SyncableEnergyStorage energyStorage;
     private SyncableBoolean active;
+    private GenericInventory inventory = registerInventoryCallback(new TileEntityInventory(this, "ceramicFormer", false, 4));
 
     private MonitoredInt currentWork;
     private MonitoredInt maxWork;
-
-    private SyncableItemStack battery;
-    private SyncableItemStack input1;
-    private SyncableItemStack input2;
-    private SyncableItemStack output;
     private boolean lastActive = false;
+
+    private SyncableSides batterySides;
+    private SyncableSides input1Sides;
+    private SyncableSides input2Sides;
+    private SyncableSides outputSides;
+
+    @IncludeInterface(ISidedInventory.class)
+    private SidedInventoryAdapter sidedInventory = new SidedInventoryAdapter(inventory);
 
     public TileEntityCeramicFormer() {
         super();
+        sidedInventory.registerSlot(0, batterySides, true, true);
+        sidedInventory.registerSlot(1, input1Sides, true, true);
+        sidedInventory.registerSlot(2, input2Sides, true, true);
+        sidedInventory.registerSlot(3, outputSides, false, true);
     }
 
     @Override
@@ -48,10 +63,17 @@ public class TileEntityCeramicFormer extends TileEntityMachineBase {
         currentWork = new MonitoredInt(0);
         maxWork = new MonitoredInt(200);
 
-        battery = new SyncableItemStack();
-        input1 = new SyncableItemStack();
-        input2 = new SyncableItemStack();
-        output = new SyncableItemStack();
+        batterySides = new SyncableSides();
+        input1Sides = new SyncableSides();
+        input2Sides = new SyncableSides();
+        outputSides = new SyncableSides();
+
+        for(int i = 0; i < 6; i++) {
+            batterySides.set(ForgeDirection.getOrientation(i), true);
+            input1Sides.set(ForgeDirection.getOrientation(i), true);
+            input2Sides.set(ForgeDirection.getOrientation(i), true);
+            outputSides.set(ForgeDirection.getOrientation(i), true);
+        }
     }
 
     public int getWorkProgressScaled(int max) {
@@ -64,9 +86,11 @@ public class TileEntityCeramicFormer extends TileEntityMachineBase {
 
         setActive(false);
 
-        if(input1.get() != null && input2.get() != null) {
-            if (RecipesCeramicFormer.isValid(input1.get().copy(), input2.get().copy())) {
-                setMaxWork(RecipesCeramicFormer.getWorkForItem(input2.get().copy()));
+        ItemStack input1 = getInventory().getStackInSlot(1);
+        ItemStack input2 = getInventory().getStackInSlot(2);
+        if(input1 != null && input2 != null) {
+            if (RecipesCeramicFormer.isValid(input1.copy(), input2.copy())) {
+                setMaxWork(RecipesCeramicFormer.getWorkForItem(input2.copy()));
 
                 if (getEnergyStorage().getEnergyStored() >= Config.EnergyUsage.CERAMIC_FORMER) {
                     if (getCurrentWork() < getMaxWork()) {
@@ -76,25 +100,26 @@ public class TileEntityCeramicFormer extends TileEntityMachineBase {
                     }
 
                     ItemStack[] inputSlots = new ItemStack[2];
-                    inputSlots[0] = input1.get().copy();
-                    inputSlots[1] = input2.get().copy();
+                    inputSlots[0] = input1.copy();
+                    inputSlots[1] = input2.copy();
 
                     if (getCurrentWork() >= getMaxWork()) {
                         ItemStack[] craftResult = RecipesCeramicFormer.doCraft(inputSlots);
                         if (craftResult.length != 3) return;
-                        if (output.get() == null || output.get().stackSize == 0) {
-                            input1.set(craftResult[0]);
-                            input2.set(craftResult[1]);
-                            output.set(craftResult[2]);
+                        ItemStack output = getInventory().getStackInSlot(3);
+                        if (output == null || output.stackSize == 0) {
+                            input1 = craftResult[0];
+                            input2 = craftResult[1];
+                            output = craftResult[2];
 
                             setCurrentWork(0);
-                        } else if (craftResult[2].getItem().equals(output.get().getItem())
-                                && craftResult[2].getItemDamage() == output.get().getItemDamage()
-                                && craftResult[2].stackSize + output.get().stackSize <= output.get().getMaxStackSize()) {
+                        } else if (craftResult[2].getItem().equals(output.getItem())
+                                && craftResult[2].getItemDamage() == output.getItemDamage()
+                                && craftResult[2].stackSize + output.stackSize <= output.getMaxStackSize()) {
 
-                            input1.set(craftResult[0]);
-                            input2.set(craftResult[1]);
-                            output.increaseStackSize(craftResult[2].stackSize);
+                            input1 = craftResult[0];
+                            input2 = craftResult[1];
+                            output.stackSize = craftResult[2].stackSize;
 
                             setCurrentWork(0);
                         }
@@ -104,55 +129,6 @@ public class TileEntityCeramicFormer extends TileEntityMachineBase {
         }
 
         lastActive = isActive();
-    }
-
-    @Override
-    public void setInventorySlotContents(int slot, ItemStack itemStack) {
-        if(slot == 0) {
-            super.setInventorySlotContents(slot, itemStack);
-            return;
-        }
-        if(slot > 3) return;
-
-        if(itemStack != null && itemStack.stackSize > getInventoryStackLimit())
-            itemStack.stackSize = getInventoryStackLimit();
-
-        getSlot(slot).set(itemStack);
-    }
-
-    @Override
-    public int getSizeInventory() {
-        return 3 + super.getSizeInventory();
-    }
-
-    @Override
-    public ItemStack getStackInSlot(int slot) {
-        return slot == 0 ? super.getStackInSlot(slot) : getSlot(slot).get();
-    }
-
-    @Override
-    public ItemStack getStackInSlotOnClosing(int slot) {
-        if(slot == 0) return super.getStackInSlotOnClosing(slot);
-
-        ItemStack itemStack = getSlot(slot).get() != null ? getSlot(slot).get().copy() : null;
-        getSlot(slot).set(null);
-        return itemStack;
-    }
-
-    @Override
-    public ItemStack decrStackSize(int slot, int amount) {
-        if(slot == 0) return super.decrStackSize(slot, amount);
-        if(slot > 3) return null;
-        if(getSlot(slot).get() == null) return null;
-
-        if(getSlot(slot).get().stackSize <= amount) {
-            ItemStack item = getSlot(slot).get().copy();
-            getSlot(slot).set(null);
-            return item;
-        } else {
-            getSlot(slot).decreaseStackSize(amount);
-            return new ItemStack(getSlot(slot).get().getItem(), amount, getSlot(slot).get().getItemDamage());
-        }
     }
 
     public void setMaxWork(int maxWork) {
@@ -191,35 +167,6 @@ public class TileEntityCeramicFormer extends TileEntityMachineBase {
         i.set(i.get() + 1);
     }
 
-    private void dec(SyncableInt i) {
-        i.set(i.get() - 1);
-    }
-
-    @Override
-    public ItemStack getBattery() {
-        return battery.get() != null ? battery.get().copy() : null;
-    }
-
-    @Override
-    public void setBattery(ItemStack battery) {
-        this.battery.set(battery);
-    }
-
-    private SyncableItemStack getSlot(int slot) {
-        switch (slot) {
-            case 0:
-                return battery;
-            case 1:
-                return input1;
-            case 2:
-                return input2;
-            case 3:
-                return output;
-            default:
-                return battery;
-        }
-    }
-
     @Override
     public boolean canOpenGui(EntityPlayer player) {
         return true;
@@ -227,7 +174,7 @@ public class TileEntityCeramicFormer extends TileEntityMachineBase {
 
     @Override
     public Object getClientGui(EntityPlayer player) {
-        return new GuiOpenCeramicFormer(new ContainerCeramicFormer(player.inventory, this));
+        return new GuiCeramicFormer(new ContainerCeramicFormer(player.inventory, this));
     }
 
     @Override
@@ -243,7 +190,7 @@ public class TileEntityCeramicFormer extends TileEntityMachineBase {
 
     public <T> void subscribeListener(String name, IValueChangedListener<T> listener) {
         if(name.equalsIgnoreCase("energyStored") || name.equalsIgnoreCase("maxEnergyStored") || name.equalsIgnoreCase("maxReceive") || name.equalsIgnoreCase("maxExtract")) {
-            energyStorage.subscribeListener(name, listener);
+            energyStorage.subscribe(name, listener);
         } else {
             for(Field field : getClass().getDeclaredFields()) {
                 boolean implementsInterface = Arrays.asList(field.getType().getInterfaces()).contains(IMonitoredValue.class);
@@ -255,5 +202,10 @@ public class TileEntityCeramicFormer extends TileEntityMachineBase {
                     }
             }
         }
+    }
+
+    @Override
+    public IInventory getInventory() {
+        return inventory;
     }
 }

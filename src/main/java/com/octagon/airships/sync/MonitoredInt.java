@@ -43,6 +43,11 @@ public class MonitoredInt extends SyncableObjectBase implements IMonitoredValue<
         fireListeners();
     }
 
+    @Override
+    public void forceUpdate() {
+        fireListeners();
+    }
+
     private void fireListeners() {
         for(IValueChangedListener<Integer> listener : listeners) {
             listener.valueChanged(value);

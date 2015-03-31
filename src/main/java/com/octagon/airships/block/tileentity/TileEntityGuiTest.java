@@ -4,14 +4,14 @@ import cofh.api.energy.IEnergyReceiver;
 import com.octagon.airships.MassEffectShips;
 import com.octagon.airships.block.item.ItemMachine;
 import com.octagon.airships.client.gui.machine.ContainerMachineBase;
-import com.octagon.airships.client.gui.machine.GuiOpenMachineBase;
+import com.octagon.airships.client.gui.machine.GuiMachineBase;
 import com.octagon.airships.recipe.RecipesAlloyMixer;
 import com.octagon.airships.reference.Config;
 import com.octagon.airships.reference.GUIs;
 import com.octagon.airships.sync.SyncableEnergyStorage;
 import com.octagon.airships.sync.SyncableItemStack;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.ISidedInventory;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import openmods.api.IActivateAwareTile;
 import openmods.api.IHasGui;
@@ -20,7 +20,7 @@ import openmods.sync.SyncableBoolean;
 import openmods.sync.SyncableInt;
 import openmods.sync.drops.StoreOnDrop;
 
-public class TileEntityGuiTest extends TileEntityMachineBase implements IHasGui, IActivateAwareTile, IEnergyReceiver, ISidedInventory {
+public class TileEntityGuiTest extends TileEntityMachineBase implements IHasGui, IActivateAwareTile, IEnergyReceiver {
     private SyncableItemStack battery;
 
     private SyncableItemStack input1;
@@ -37,7 +37,7 @@ public class TileEntityGuiTest extends TileEntityMachineBase implements IHasGui,
     private boolean lastActive;
 
     public TileEntityGuiTest() {
-        super("Alloy Mixer");
+
     }
 
     @Override
@@ -108,72 +108,8 @@ public class TileEntityGuiTest extends TileEntityMachineBase implements IHasGui,
     }
 
     @Override
-    public void setInventorySlotContents(int slot, ItemStack itemStack) {
-        if(slot == 0) {
-            super.setInventorySlotContents(slot, itemStack);
-            return;
-        }
-        if(slot > 4) return;
-
-        if(itemStack != null) {
-            if (itemStack.stackSize > getInventoryStackLimit())
-                itemStack.stackSize = getInventoryStackLimit();
-        }
-
-        getSlot(slot).set(itemStack);
-    }
-
-    @Override
-    public int getSizeInventory() {
-        return 4 + super.getSizeInventory();
-    }
-
-    @Override
-    public ItemStack getStackInSlot(int slot) {
-        if(slot == 0) return super.getStackInSlot(slot);
-
-        switch (slot) {
-            case 1:
-                return input1.get();
-            case 2:
-                return input2.get();
-            case 3:
-                return input3.get();
-            case 4:
-                return output.get();
-        }
-
-        return null;
-    }
-
-    @Override
-    public ItemStack getStackInSlotOnClosing(int slot) {
-        if(slot == 0) return super.getStackInSlotOnClosing(slot);
-
-        ItemStack itemStack = getSlot(slot).get() != null ? getSlot(slot).get().copy() : null;
-        getSlot(slot).set(null);
-
-        return itemStack;
-    }
-
-    @Override
-    public ItemStack decrStackSize(int slot, int amount) {
-        if(slot == 0) return super.decrStackSize(slot, amount);
-
-        if(slot > 4) return null;
-        SyncableItemStack item = getSlot(slot);
-
-        if(item.get() == null) return null;
-
-
-        if(item.get().stackSize <= amount) {
-            ItemStack itemStack = item.get().copy();
-            item.set(null);
-            return itemStack;
-        } else {
-            item.decreaseStackSize(amount);
-            return new ItemStack(item.get().getItem(), amount, item.get().getItemDamage());
-        }
+    public IInventory getInventory() {
+        return inventory;
     }
 
     public void setMaxWork(int maxWork) {
@@ -251,7 +187,7 @@ public class TileEntityGuiTest extends TileEntityMachineBase implements IHasGui,
 
     @Override
     public Object getClientGui(EntityPlayer player) {
-        return new GuiOpenMachineBase<>(new ContainerMachineBase<>(player.inventory, this));
+        return new GuiMachineBase<>(new ContainerMachineBase<>(player.inventory, this));
     }
 
     @Override
@@ -262,7 +198,7 @@ public class TileEntityGuiTest extends TileEntityMachineBase implements IHasGui,
     @Override
     public <T> void subscribeListener(String name, IValueChangedListener<T> listener) {
         if(name.equalsIgnoreCase("energyStored") || name.equalsIgnoreCase("maxEnergyStored") || name.equalsIgnoreCase("maxReceive") || name.equalsIgnoreCase("maxExtract")) {
-            energyStorage.subscribeListener(name, listener);
+            energyStorage.subscribe(name, listener);
         }
     }
 }

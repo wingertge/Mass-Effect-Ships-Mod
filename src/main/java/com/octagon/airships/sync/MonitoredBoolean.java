@@ -28,6 +28,11 @@ public class MonitoredBoolean extends SyncableObjectBase implements IMonitoredVa
         }
     }
 
+    @Override
+    public void forceUpdate() {
+        fireListeners();
+    }
+
     public Boolean get() {
         return value;
     }

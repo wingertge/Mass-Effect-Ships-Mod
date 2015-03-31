@@ -29,4 +29,8 @@ public abstract class AirshipsContainer<T extends SyncedTileEntity> extends Cont
         this.addSlotToContainer(slot);
         return slot;
     }
+
+    public IInventory getPlayerInventory() {
+        return playerInventory;
+    }
 }

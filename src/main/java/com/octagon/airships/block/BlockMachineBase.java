@@ -46,15 +46,15 @@ public class BlockMachineBase extends OpenBlock {
     private String bottomActiveName;
 
 
-    public BlockMachineBase(String name, Material material, String textureFront, String textureFrontActive, String textureOther, String textureOtherActive) {
-        this(name, material, textureFront, textureFrontActive, textureOther, textureOtherActive, textureOther, textureOtherActive);
+    public BlockMachineBase(Material material, String textureFront, String textureFrontActive, String textureOther, String textureOtherActive) {
+        this(material, textureFront, textureFrontActive, textureOther, textureOtherActive, textureOther, textureOtherActive);
     }
 
-    public BlockMachineBase(String name, Material material, String textureFront, String textureFrontActive, String textureTop, String textureTopActive, String textureOther, String textureOtherActive) {
-        this(name, material, textureFront, textureFrontActive, textureOther, textureOtherActive, textureOther, textureOtherActive, textureOther, textureOtherActive, textureTop, textureTopActive, textureOther, textureOtherActive);
+    public BlockMachineBase(Material material, String textureFront, String textureFrontActive, String textureTop, String textureTopActive, String textureOther, String textureOtherActive) {
+        this(material, textureFront, textureFrontActive, textureOther, textureOtherActive, textureOther, textureOtherActive, textureOther, textureOtherActive, textureTop, textureTopActive, textureOther, textureOtherActive);
     }
 
-    public BlockMachineBase(String name, Material material, String textureFront, String textureFrontActive, String textureLeft, String textureLeftActive, String textureRight, String textureRightActive, String textureBack, String textureBackActive, String textureTop, String textureTopActive, String textureBottom, String textureBottomActive) {
+    public BlockMachineBase(Material material, String textureFront, String textureFrontActive, String textureLeft, String textureLeftActive, String textureRight, String textureRightActive, String textureBack, String textureBackActive, String textureTop, String textureTopActive, String textureBottom, String textureBottomActive) {
         super(material);
         frontName = Reference.MOD_ID + ":" + textureFront;
         frontActiveName = Reference.MOD_ID + ":" + textureFrontActive;

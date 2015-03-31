@@ -25,8 +25,416 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdedbc7d-9f0e-4754-acfc-a55e5c68042a" name="Default" comment="">
+    <list default="true" id="fdedbc7d-9f0e-4754-acfc-a55e5c68042a" name="Default" comment="I hate OpenGL">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/gui/deuteriumExtractor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/blocks/deuteriumHarvester.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/blocks/deuteriumHarvester_on.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/gui/electrolyzer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/blocks/launchPadIO.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/blocks/launchPadIO_ends.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/blocks/normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/blocks/transparentLiquid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/test/AbstractGuiElectrolyzer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockDeuteriumExtractor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockLaunchPadIO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerDeuteriumExtractor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerElectrolyzer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/CrazyContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/antlr/CrazyGUI.g4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/CrazyGUI.tokens" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/CrazyGUIBaseListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/CrazyGUIBaseVisitor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/CrazyGUILexer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/CrazyGUILexer.tokens" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/CrazyGUIListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/CrazyGUIParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/CrazyGUIVisitor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentEnergyGauge.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentFluidGauge.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiDeuteriumExtractor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiElectrolyzer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/test/GuiMachineBase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/GuiVisitor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/IHasCustomLogic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/IMonitoredComposite.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/IXAMLGuiComponent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/util/InvalidOperationException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/item/ItemDeuteriumExtractor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/item/ItemLaunchPad.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/item/ItemLaunchPadController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/item/ItemLaunchPadIO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/util/KeyHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/fluid/LaunchPadFluidTank.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/inventory/LaunchPadInventory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/MonitoredTank.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/SyncableSet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityDeuteriumExtractor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityElectrolyzer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityLaunchPad.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityLaunchPadIO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/gui/electrolyzer.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/gui/electrolyzer_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/blocks/transparentLiquid.png.mcmeta" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player103.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player106.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player114.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player12.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player120.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player124.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player129.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player14.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player145.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player155.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player158.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player161.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player186.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player188.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player204.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player207.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player226.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player232.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player237.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player242.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player248.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player277.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player279.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player306.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player307.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player31.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player316.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player329.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player332.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player340.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player38.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player395.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player408.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player43.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player436.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player444.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player446.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player450.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player453.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player463.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player479.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player488.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player512.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player518.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player537.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player543.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player545.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player549.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player558.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player568.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player585.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player590.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player6.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player603.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player61.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player615.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player624.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player63.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player632.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player640.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player645.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player659.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player666.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player672.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player693.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player701.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player72.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player73.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player733.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player74.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player743.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player76.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player769.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player772.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player773.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player781.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player785.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player797.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player807.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player814.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player824.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player84.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player862.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player863.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player870.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player873.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player89.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player891.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player91.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player927.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player934.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player953.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player961.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player962.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player964.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player983.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player991.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player992.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\NEI\players\Player993.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\cofh\EnderFrequencies.cfg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\007fdc41-9afa-3dd2-b8c2-6d71f040d4a4.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\05d3c308-6531-310d-988c-a6164eaf800d.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\062aacfa-27f8-3a16-95b1-e980c0c72c9e.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\0b528170-9a17-3210-8f89-29a23a002245.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\0b5a2d2c-03aa-39ec-afcb-3af64e25eb27.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\0d3f56a3-2b3f-38d6-a849-9d61b8f97a5c.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\10093cea-54e5-30aa-8af3-58e53a90cf15.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\10170aa4-882d-3b2e-9798-50b9f8d93a4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\11e8c009-da15-3a5d-81f0-ba0017af511c.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\122d3a74-28b3-3553-91d4-9092b640ce8e.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\19487181-3859-391a-bf75-143cc8396d12.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\1a855883-f969-3f42-8f5f-11e58eba890c.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\1c207d49-b6d4-301f-bf62-f591002e4f1a.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\1dc55782-3c00-3ed4-bf8b-76d4c6d9cc47.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\1dd34f6b-f553-3906-92e2-e13f78ae2b51.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\1f3c4999-135a-3409-82bf-957837de1473.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\2a17dfd1-129d-330b-9eb4-f363ef062eed.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\2afb4ee9-7113-3f92-8544-46d36df86129.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\3040503a-3235-3de3-b74a-4cf8adeec910.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\3125069d-d602-307c-b8a2-944bd3e356c2.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\3155dd2a-f684-3928-a1f6-f0dff831507f.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\33e9440c-90db-3f3e-bf40-dab751114d4d.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\3584c7cd-614b-3687-b1ad-b239e7a37bd8.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\3959aa12-3a9d-3fc4-84ad-d0d3c7c6550b.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\3dc62e7d-7679-3ce7-b3a5-cf513aa6eb7c.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\44915209-9814-3995-87c7-f4dc48b55294.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\533168cf-a4ab-3aac-8306-f7a8b71689a4.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\56a259bf-cc44-38c1-8061-dd05953c60e0.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\577679a7-fd79-34ce-82ca-9e17c30582b1.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\5c6d79ca-db3a-3a0a-8d04-9e811bde5c64.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\60d19c6d-8381-348f-9d23-cb28708609fc.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\610176b0-594f-3c1a-b889-ed063dbc06ea.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\6130f4bb-8300-3783-bbd4-302f5fef0fc2.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\6256f6e3-2e58-3651-998e-2564a0b2a631.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\64aef991-58f2-3dcc-9bb9-8df57ee15c84.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\69f2b187-e079-316a-90f3-428ee409a7fd.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\6e946422-0041-3048-9c85-48e4f886211a.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\6f7d35ad-9152-3823-9277-b683a91158a3.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\777409db-46bf-31bf-844f-6d600c083d6c.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\79588fdd-6216-324d-ac44-68b387fcfb5c.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\7e6a41b9-68d1-390b-a11e-48670dd53b6a.dat.tmp" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\7ef37f89-ec95-314c-ad83-8a71ac6e461c.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\825162a0-782b-3bd7-995d-a72551a0b3e8.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\87838b30-d4f9-3495-97a3-26161a757982.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\8b099b45-7c1f-3749-8e57-5c8f500dad04.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\8b435ab7-751f-377f-8d6e-243e4ae9abf2.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\8c4d07ef-5a2e-3e89-afcd-48fd7e18bf32.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\8f2ecf49-60e3-3c84-b5c7-945f8f24636d.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\8fffffe9-1697-3450-bdc4-1834288fdb99.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\93caad21-f530-38b7-b8b7-9239abf6836d.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\984cf274-9eed-399c-97dc-353ad10f84a8.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\9a9311e6-0e2a-3db9-849c-c74b23116910.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\9aff406e-3282-3c93-8c5e-62214f4adca0.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\9ba8005a-2f55-38dd-9454-3d3b1d67bff1.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\9bfc7d2e-b7d2-36ba-8889-dc94b2f1b428.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\9c6f7109-b578-36c3-a272-028e06c40407.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\9d68ef8a-3024-3cdc-bc81-6fbd472f8ed9.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\9dc90764-797e-30c6-bac3-354c01806f0d.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\a000e289-fff2-30ee-8de9-0ce5e6f063aa.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\a08e137b-04fa-3fce-96cc-517c7a87690d.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\a349eb7d-8b74-32da-bb8d-6a1fb49c3d85.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\a5a8f223-bd67-3916-8410-d423aaebf2d5.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\a944d272-b5cd-3b57-b4eb-9b34a77b45aa.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\abf9489f-335c-323d-bf8c-6e98800dc4a3.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\ac41f76c-b1dd-32f9-a5d3-3eb94da3e653.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\ac42e7c5-bf90-3ead-ba50-c551df161044.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\ae44171f-eee5-3760-be7d-ed3ffafd8795.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\b2d19156-5364-397f-8e33-abd769d6319d.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\b436a3b6-3bfd-34ab-a0ca-b7a09efebbdc.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\b4e0083c-c857-3e3a-a915-f92e6611bf03.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\b7a940e4-3cde-3275-9c73-2f71fe593c98.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\b8c5ee80-8fcd-32b0-a4c2-2c2e7de58468.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\bce7419c-5709-3ee4-a73f-d19725fe2893.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\bf0c47d3-02b6-3463-8e38-457226b1407c.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\c5f2027d-c05b-3ad0-bbf1-20e3f4a553c8.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\ca94d3c2-08bb-3cb6-9c61-61015e7666c6.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\cc8f980e-8ea7-381a-8715-01149d418cfb.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\d0f5fb0c-30f8-3708-84d1-e619aef4d8f4.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\d4f59999-1785-359b-b48d-ac18df657dda.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\d6d392a6-44f8-3510-88ef-1f2f06277d32.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\d75ffc85-72b0-3b94-be32-d104d89a3a6a.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\d7cff5a0-f2a0-3727-aca6-d996fc42f55a.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\dfa57433-6d23-31fd-a282-bdca1175e553.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\e6f6e71e-f1b8-32cb-a47d-066aff706ad2.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\eadcccd1-5981-31ce-8342-c727c73b0197.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\f0c5379b-0e4e-34aa-808d-37fef9b5ce6c.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\f16c07c2-b584-3cdf-b107-12544f991913.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\f189da80-d431-3f80-9126-43ccee16f040.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\f2937d48-a72f-3375-bb6f-69c5f204d185.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\f5b981a5-256b-3e0a-a7c0-a95965005354.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\fd31ce15-3baa-3523-8ee4-307bb606ee39.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\fe171829-6121-3106-a1a5-6a3600a4ef7d.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\fe736038-102e-365b-a97e-eabc472944ec.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\playerdata\ff77e115-0eac-3fde-846a-00b8d6de38b0.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\region\r.-1.-1.mca" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\region\r.0.-1.mca" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\region\r.0.1.mca" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\region\r.0.2.mca" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\region\r.0.3.mca" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\region\r.1.-1.mca" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\region\r.1.0.mca" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\region\r.1.2.mca" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\region\r.1.3.mca" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\007fdc41-9afa-3dd2-b8c2-6d71f040d4a4.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\05d3c308-6531-310d-988c-a6164eaf800d.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\062aacfa-27f8-3a16-95b1-e980c0c72c9e.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\0b528170-9a17-3210-8f89-29a23a002245.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\0b5a2d2c-03aa-39ec-afcb-3af64e25eb27.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\0d3f56a3-2b3f-38d6-a849-9d61b8f97a5c.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\10093cea-54e5-30aa-8af3-58e53a90cf15.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\10170aa4-882d-3b2e-9798-50b9f8d93a4b.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\11e8c009-da15-3a5d-81f0-ba0017af511c.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\122d3a74-28b3-3553-91d4-9092b640ce8e.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\19487181-3859-391a-bf75-143cc8396d12.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\1a855883-f969-3f42-8f5f-11e58eba890c.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\1c207d49-b6d4-301f-bf62-f591002e4f1a.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\1dc55782-3c00-3ed4-bf8b-76d4c6d9cc47.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\1dd34f6b-f553-3906-92e2-e13f78ae2b51.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\1f3c4999-135a-3409-82bf-957837de1473.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\2a17dfd1-129d-330b-9eb4-f363ef062eed.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\2afb4ee9-7113-3f92-8544-46d36df86129.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\3040503a-3235-3de3-b74a-4cf8adeec910.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\3125069d-d602-307c-b8a2-944bd3e356c2.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\3155dd2a-f684-3928-a1f6-f0dff831507f.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\33e9440c-90db-3f3e-bf40-dab751114d4d.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\3584c7cd-614b-3687-b1ad-b239e7a37bd8.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\3959aa12-3a9d-3fc4-84ad-d0d3c7c6550b.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\3dc62e7d-7679-3ce7-b3a5-cf513aa6eb7c.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\44915209-9814-3995-87c7-f4dc48b55294.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\533168cf-a4ab-3aac-8306-f7a8b71689a4.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\56a259bf-cc44-38c1-8061-dd05953c60e0.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\577679a7-fd79-34ce-82ca-9e17c30582b1.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\5c6d79ca-db3a-3a0a-8d04-9e811bde5c64.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\60d19c6d-8381-348f-9d23-cb28708609fc.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\610176b0-594f-3c1a-b889-ed063dbc06ea.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\6130f4bb-8300-3783-bbd4-302f5fef0fc2.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\6256f6e3-2e58-3651-998e-2564a0b2a631.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\64aef991-58f2-3dcc-9bb9-8df57ee15c84.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\69f2b187-e079-316a-90f3-428ee409a7fd.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\6e946422-0041-3048-9c85-48e4f886211a.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\6f7d35ad-9152-3823-9277-b683a91158a3.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\777409db-46bf-31bf-844f-6d600c083d6c.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\79588fdd-6216-324d-ac44-68b387fcfb5c.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\7e6a41b9-68d1-390b-a11e-48670dd53b6a.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\7ef37f89-ec95-314c-ad83-8a71ac6e461c.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\825162a0-782b-3bd7-995d-a72551a0b3e8.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\87838b30-d4f9-3495-97a3-26161a757982.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\8b099b45-7c1f-3749-8e57-5c8f500dad04.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\8b435ab7-751f-377f-8d6e-243e4ae9abf2.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\8c4d07ef-5a2e-3e89-afcd-48fd7e18bf32.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\8f2ecf49-60e3-3c84-b5c7-945f8f24636d.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\8fffffe9-1697-3450-bdc4-1834288fdb99.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\93caad21-f530-38b7-b8b7-9239abf6836d.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\984cf274-9eed-399c-97dc-353ad10f84a8.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\9a9311e6-0e2a-3db9-849c-c74b23116910.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\9aff406e-3282-3c93-8c5e-62214f4adca0.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\9ba8005a-2f55-38dd-9454-3d3b1d67bff1.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\9bfc7d2e-b7d2-36ba-8889-dc94b2f1b428.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\9c6f7109-b578-36c3-a272-028e06c40407.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\9d68ef8a-3024-3cdc-bc81-6fbd472f8ed9.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\9dc90764-797e-30c6-bac3-354c01806f0d.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\a000e289-fff2-30ee-8de9-0ce5e6f063aa.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\a08e137b-04fa-3fce-96cc-517c7a87690d.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\a349eb7d-8b74-32da-bb8d-6a1fb49c3d85.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\a5a8f223-bd67-3916-8410-d423aaebf2d5.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\a944d272-b5cd-3b57-b4eb-9b34a77b45aa.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\abf9489f-335c-323d-bf8c-6e98800dc4a3.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\ac41f76c-b1dd-32f9-a5d3-3eb94da3e653.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\ac42e7c5-bf90-3ead-ba50-c551df161044.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\ae44171f-eee5-3760-be7d-ed3ffafd8795.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\b2d19156-5364-397f-8e33-abd769d6319d.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\b436a3b6-3bfd-34ab-a0ca-b7a09efebbdc.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\b4e0083c-c857-3e3a-a915-f92e6611bf03.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\b7a940e4-3cde-3275-9c73-2f71fe593c98.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\b8c5ee80-8fcd-32b0-a4c2-2c2e7de58468.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\bce7419c-5709-3ee4-a73f-d19725fe2893.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\bf0c47d3-02b6-3463-8e38-457226b1407c.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\c5f2027d-c05b-3ad0-bbf1-20e3f4a553c8.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\ca94d3c2-08bb-3cb6-9c61-61015e7666c6.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\cc8f980e-8ea7-381a-8715-01149d418cfb.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\d0f5fb0c-30f8-3708-84d1-e619aef4d8f4.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\d4f59999-1785-359b-b48d-ac18df657dda.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\d6d392a6-44f8-3510-88ef-1f2f06277d32.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\d75ffc85-72b0-3b94-be32-d104d89a3a6a.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\d7cff5a0-f2a0-3727-aca6-d996fc42f55a.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\dfa57433-6d23-31fd-a282-bdca1175e553.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\e6f6e71e-f1b8-32cb-a47d-066aff706ad2.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\eadcccd1-5981-31ce-8342-c727c73b0197.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\f0c5379b-0e4e-34aa-808d-37fef9b5ce6c.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\f16c07c2-b584-3cdf-b107-12544f991913.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\f189da80-d431-3f80-9126-43ccee16f040.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\f2937d48-a72f-3375-bb6f-69c5f204d185.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\f5b981a5-256b-3e0a-a7c0-a95965005354.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\fd31ce15-3baa-3523-8ee4-307bb606ee39.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\fe171829-6121-3106-a1a5-6a3600a4ef7d.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\fe736038-102e-365b-a97e-eabc472944ec.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\eclipse\saves\New World\stats\ff77e115-0eac-3fde-846a-00b8d6de38b0.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/playerdata/428a9eb8-eb59-3300-892c-1124ca047d38.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/playerdata/428a9eb8-eb59-3300-892c-1124ca047d38.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/NEI/local/New World/NEI.dat" afterPath="$PROJECT_DIR$/eclipse/saves/NEI/local/New World/NEI.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/playerdata/dfdc5dbd-4a0e-3b6a-a815-601a03741434.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/playerdata/dfdc5dbd-4a0e-3b6a-a815-601a03741434.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/gui/launchPadMultiblock.png" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/gui/launchPadMultiblock.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/level.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/level.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/level.dat_mcr" afterPath="$PROJECT_DIR$/eclipse/saves/New World/level.dat_mcr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/level.dat_old" afterPath="$PROJECT_DIR$/eclipse/saves/New World/level.dat_old" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/gui/elements/machine.png" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/textures/gui/elements/machine.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/region/r.-1.0.mca" afterPath="$PROJECT_DIR$/eclipse/saves/New World/region/r.-1.0.mca" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/region/r.-1.2.mca" afterPath="$PROJECT_DIR$/eclipse/saves/New World/region/r.-1.2.mca" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/region/r.0.0.mca" afterPath="$PROJECT_DIR$/eclipse/saves/New World/region/r.0.0.mca" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/session.lock" afterPath="$PROJECT_DIR$/eclipse/saves/New World/session.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/DIM-1/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/DIM-1/data/villages.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/DIM1/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/DIM1/data/villages.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/data/villages.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/stats/428a9eb8-eb59-3300-892c-1124ca047d38.json" afterPath="$PROJECT_DIR$/eclipse/saves/New World/stats/428a9eb8-eb59-3300-892c-1124ca047d38.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/AirshipsContainer.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/AirshipsContainer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/fluid/AirshipsFluid.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/fluid/AirshipsFluid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockAirshipsFluid.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockAirshipsFluid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockAlloyMixer.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockAlloyMixer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockCeramicFormer.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockCeramicFormer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockMachineBase.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockMachineBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/reference/Colors.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/reference/Colors.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/reference/Config.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/reference/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerAlloyMixer.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerAlloyMixer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerCeramicFormer.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerCeramicFormer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/ContainerLaunchPadMultiblock.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/ContainerLaunchPadMultiblock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerMachineBase.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerMachineBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/GuiAirshipsContainer.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/GuiAirshipsContainer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentProgressBar.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentProgressBar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/GuiLaunchPadMultiblock.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/GuiLaunchPadMultiblock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/IMonitoredValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/IMonitoredValue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/item/ItemProbe.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/item/ItemProbe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/config/MassEffectShips.cfg" afterPath="$PROJECT_DIR$/eclipse/config/MassEffectShips.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MassEffectShips.iml" afterPath="$PROJECT_DIR$/MassEffectShips.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MassEffectShips.ipr" afterPath="$PROJECT_DIR$/MassEffectShips.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MassEffectShips.iws" afterPath="$PROJECT_DIR$/MassEffectShips.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/MassEffectShips.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/MassEffectShips.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/init/ModBlocks.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/init/ModBlocks.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/MonitoredBoolean.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/MonitoredBoolean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/MonitoredInt.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/MonitoredInt.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/slots/SlotProbe.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/slots/SlotProbe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/SyncableEnergyStorage.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/SyncableEnergyStorage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityAlloyMixer.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityAlloyMixer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityCeramicFormer.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityCeramicFormer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityGuiTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityGuiTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityLaunchPadMultiblock.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityLaunchPadMultiblock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityMachineBase.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityMachineBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityMultiblockPart.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityMultiblockPart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/stats/dfdc5dbd-4a0e-3b6a-a815-601a03741434.json" afterPath="$PROJECT_DIR$/eclipse/saves/New World/stats/dfdc5dbd-4a0e-3b6a-a815-601a03741434.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/lang/en_US.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/masseffectships/lang/en_US.lang" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/latest.log" afterPath="$PROJECT_DIR$/eclipse/logs/latest.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/usernamecache.json" afterPath="$PROJECT_DIR$/eclipse/usernamecache.json" />
+      <change type="MOVED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\src\main\java\com\octagon\airships\client\gui\machine\GuiOpenAlloyMixer.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiAlloyMixer.java" />
+      <change type="MOVED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\src\main\java\com\octagon\airships\client\gui\machine\GuiOpenCeramicFormer.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiCeramicFormer.java" />
+      <change type="MOVED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\src\main\java\com\octagon\airships\client\gui\machine\GuiOpenMachineBase.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiMachineBase.java" />
+      <change type="MOVED" beforePath="E:\Dropbox\IdeaProjects\mods\MassEffectShips\src\main\java\com\octagon\airships\handler\GuiHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/GuiHandler.java" />
     </list>
     <ignored path="MassEffectShips.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,83 +501,152 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="en_US.lang" pinned="true" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/masseffectships/lang/en_US.lang">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TileEntityLaunchPadMultiblock.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityLaunchPadMultiblock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="281" column="0" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GuiEezoCoreBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/GuiEezoCoreBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AirshipsContainer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/AirshipsContainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GuiAirshipsContainer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/GuiAirshipsContainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MultiblockStructure.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/multiblock/MultiblockStructure.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-              <folding>
-                <element signature="e#1007#1039#0" expanded="true" />
-                <element signature="e#1176#1233#0" expanded="true" />
-                <element signature="e#1407#1408#0" expanded="true" />
-                <element signature="e#1434#1435#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TileEntityEezoCoreBaseRenderer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/render/tileentity/TileEntityEezoCoreBaseRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33389544">
-              <caret line="108" column="75" selection-start-line="108" selection-start-column="75" selection-end-line="108" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.8099688">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="GuiVisitor.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/GuiVisitor.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="179" column="62" selection-start-line="179" selection-start-column="62" selection-end-line="179" selection-end-column="62" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GuiComponentEnergyGauge.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentEnergyGauge.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MassEffectShips.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/MassEffectShips.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GuiComponentFluidGauge.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentFluidGauge.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+                  <folding>
+                    <element signature="e#985#986#0" expanded="true" />
+                    <element signature="e#1013#1014#0" expanded="true" />
+                    <element signature="e#1057#1058#0" expanded="true" />
+                    <element signature="e#1086#1087#0" expanded="true" />
+                    <element signature="e#3612#3613#0" expanded="true" />
+                    <element signature="e#3642#3643#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="electrolyzer.xml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/assets/masseffectships/gui/electrolyzer.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.036324788">
+                  <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AbstractGuiElectrolyzer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/test/AbstractGuiElectrolyzer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TileEntityElectrolyzer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityElectrolyzer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="142" column="24" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#5336#5337#0" expanded="true" />
+                    <element signature="e#5368#5369#0" expanded="true" />
+                    <element signature="e#5413#5414#0" expanded="true" />
+                    <element signature="e#5447#5448#0" expanded="true" />
+                    <element signature="e#5492#5493#0" expanded="true" />
+                    <element signature="e#5526#5527#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ContainerDeuteriumExtractor.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerDeuteriumExtractor.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GuiDeuteriumExtractor.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiDeuteriumExtractor.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="en_US.lang" pinned="true" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/assets/masseffectships/lang/en_US.lang">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="en_US.lang" pinned="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/assets/masseffectships/lang/en_US.lang">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="1.0449438">
+                  <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -185,57 +662,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiOpenCeramicFormer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityMachineBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/IPropagateNeighborChanged.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/multiblock/ITileEntityMultiblock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/multiblock/TileEntityMultiblock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockRefinedEezo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockEezoCoreHull.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/reference/Textures.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockLaunchPadIO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockMachineBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockCeramicFormer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockAlloyMixer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityDeuteriumHarvester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockDeuteriumHarvester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockDeuteriumExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/util/KeyHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/item/ItemDeuteriumExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/masseffectships/lang/en_US.lang" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/multiblock/BlockMultiblockPart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/BlockLaunchPad.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/reference/Models.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/item/ItemRocketFuel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/reference/Config.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/init/ModFluids.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/fluid/BlockLiquidDeuterium.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/fluid/BlockPressurizedFluid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/init/ModBlocks.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/MassEffectShips_at.txt" />
-        <option value="$USER_HOME$/AppData/Local/Temp/Rar$DIa0.912/GuiContainer.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1291/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/client/gui/inventory/GuiContainer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/slots/SlotInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/slots/SlotOutput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/fluid/BlockAntiprotons.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/fluid/BlockLiquidHelium3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/fluid/BlockLiquidHydrogen.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/fluid/BlockLiquidOxygen.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/MassEffectShips_at.cfg" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/ContainerLauchPadMultiblock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/slots/AirshipsSlot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/slots/SlotLiquidContainer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/slots/SlotProbeInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/slots/SlotProbe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentProgressBar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/ContainerLaunchPadMultiblock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityEezoCoreMultiblock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityMultiblockPart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/GuiLaunchPadMultiblock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/INeighborPlacedAware.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/AirshipsContainer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/GuiAirshipsContainer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/multiblock/MultiblockStructure.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/render/tileentity/TileEntityEezoCoreBaseRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerMachineBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerAlloyMixer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerCeramicFormer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityCeramicFormer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerDeuteriumExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityLaunchPad.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityLaunchPadMultiblock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/GuiEezoCoreBase.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/lib/.gitignore" />
-        <option value="$PROJECT_DIR$/gradle/.gitignore" />
-        <option value="$PROJECT_DIR$/eclipse/.gitignore" />
-        <option value="$PROJECT_DIR$/.gradle/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityDeuteriumExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/init/ModBlocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityMachineBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/reference/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerElectrolyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiElectrolyzer.java" />
+        <option value="$PROJECT_DIR$/antlr/guiParser.g4" />
+        <option value="$PROJECT_DIR$/antlr/GuiGrammar.g4" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/antlr/GuiGrammar.g4" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/GuiGrammarBaseVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/com/octagon/airships/antlr/CrazyGUIBaseListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/GuiAirshipsContainer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityAlloyMixer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityGuiTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiOpenMachineBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiMachineBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/IHasCustomLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/AirshipsContainer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/test/GuiMachineBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/MassEffectShips.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentProgressBar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/test/GuiElectrolyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/antlr/CrazyGUI.g4" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/IXAMLGuiComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/reference/Colors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/GuiLaunchPadMultiblock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/CrazyContainer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiDeuteriumExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/test/AbstractGuiElectrolyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/GuiVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityElectrolyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentEnergyGauge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentFluidGauge.java" />
       </list>
     </option>
   </component>
@@ -299,7 +776,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -328,6 +804,546 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airships" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airships" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airships" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airships" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="render" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airships" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="render" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airships" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airships" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airships" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slots" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airships" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="machine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airships" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airships" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="block" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airships" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="antlr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="antlr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MassEffectShips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value=".gradle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -335,6 +1351,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -354,7 +1371,7 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="FullScreen" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/src/OpenModsLib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -363,6 +1380,24 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value=" FILE file://E:/Dropbox/IdeaProjects/mods/MassEffectShips/src/main/java/com/octagon/airships/block/tileentity/TileEntityAlloyMixer.java" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
+    <property name="last.edited.regexp" value="~" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="$PROJECT_DIR$/antlr/guiParser.g4::/auto-gen" value="true" />
+    <property name="$PROJECT_DIR$/antlr/guiParser.g4::/gen-listener" value="true" />
+    <property name="$PROJECT_DIR$/antlr/guiParser.g4::/gen-visitor" value="false" />
+    <property name="$PROJECT_DIR$/antlr/GuiGrammar.g4::/auto-gen" value="false" />
+    <property name="$PROJECT_DIR$/antlr/GuiGrammar.g4::/language" value="Java" />
+    <property name="$PROJECT_DIR$/antlr/GuiGrammar.g4::/gen-listener" value="true" />
+    <property name="$PROJECT_DIR$/antlr/GuiGrammar.g4::/gen-visitor" value="false" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
+    <property name="$PROJECT_DIR$/src/main/antlr/CrazyGUI.g4::/auto-gen" value="false" />
+    <property name="$PROJECT_DIR$/src/main/antlr/CrazyGUI.g4::/output-dir" value="E:\Dropbox\IdeaProjects\mods\MassEffectShips\src\main\java" />
+    <property name="$PROJECT_DIR$/src/main/antlr/CrazyGUI.g4::/language" value="Java" />
+    <property name="$PROJECT_DIR$/src/main/antlr/CrazyGUI.g4::/gen-listener" value="true" />
+    <property name="$PROJECT_DIR$/src/main/antlr/CrazyGUI.g4::/gen-visitor" value="true" />
+    <property name="$PROJECT_DIR$/src/main/antlr/CrazyGUI.g4::/package" value="com.octagon.airships.antlr" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -370,7 +1405,14 @@
       <recent name="com.octagon.airships.gui" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Dropbox\IdeaProjects\mods\MassEffectShips\src\main\java\com\octagon\airships" />
       <recent name="E:\Dropbox\IdeaProjects\mods\MassEffectShips\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Dropbox\IdeaProjects\mods\MassEffectShips\src\main\antlr" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.octagon.airships.client.gui.test" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Minecraft Client">
@@ -797,7 +1839,15 @@
       <workItem from="1427439405776" duration="25000" />
       <workItem from="1427439458997" duration="274000" />
       <workItem from="1427439877817" duration="43000" />
-      <workItem from="1427439944526" duration="752000" />
+      <workItem from="1427439944526" duration="10821000" />
+      <workItem from="1427493980559" duration="11575000" />
+      <workItem from="1427510585799" duration="18474000" />
+      <workItem from="1427607388239" duration="8998000" />
+      <workItem from="1427620998552" duration="15436000" />
+      <workItem from="1427698377247" duration="5015000" />
+      <workItem from="1427732178277" duration="13032000" />
+      <workItem from="1427779540269" duration="8808000" />
+      <workItem from="1427788367505" duration="15582000" />
     </task>
     <task id="LOCAL-00001" summary="Model render glitch snapshot">
       <created>1427392548901</created>
@@ -817,45 +1867,53 @@
       <option name="project" value="LOCAL" />
       <updated>1427440690247</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated gitignore (again)">
+      <created>1427440701599</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1427440701599</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309884000" />
+    <option name="totallyTimeSpent" value="416873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32792208" sideWeight="0.4978678" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.7862473" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32792208" sideWeight="0.49573562" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32792208" sideWeight="0.5021322" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5021322" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.4978678" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18976545" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18976545" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3051948" sideWeight="0.8667377" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39718616" sideWeight="0.8891258" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32467532" sideWeight="0.7563966" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32467532" sideWeight="0.74680173" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -874,7 +1932,8 @@
     <MESSAGE value="Model render glitch snapshot" />
     <MESSAGE value="updated gitignore" />
     <MESSAGE value="updated gitignore (again)" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated gitignore (again)" />
+    <MESSAGE value="I hate OpenGL" />
+    <option name="LAST_COMMIT_MESSAGE" value="I hate OpenGL" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -887,21 +1946,45 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityMachineBase.java</url>
-          <line>237</line>
+          <url>file://$PROJECT_DIR$/lib/src/OpenModsLib/src/main/java/openmods/sync/SyncMap.java</url>
+          <line>252</line>
           <properties />
-          <option name="timeStamp" value="274" />
+          <option name="timeStamp" value="498" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lib/src/OpenModsLib/src/main/java/openmods/sync/SyncMap.java</url>
+          <line>207</line>
+          <properties />
+          <option name="timeStamp" value="500" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityDeuteriumExtractor.java</url>
+          <line>125</line>
+          <properties />
+          <option name="timeStamp" value="538" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/MonitoredTank.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="556" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/octagon/airships/MassEffectShips.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="557" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="493" />
+      <option name="time" value="578" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="structure" language="JAVA" custom="" />
-        <watch expression="radius" language="JAVA" custom="" />
-        <watch expression="blockMetadata" language="JAVA" custom="" />
-        <watch expression="worldObj.isRemote" language="JAVA" custom="" />
-        <watch expression="inventorySlots.size()" language="JAVA" custom="" />
+        <watch expression="ctx.PREFIX()" language="JAVA" custom="" />
+        <watch expression="ctx.INTVALUE()" language="JAVA" custom="" />
+        <watch expression="ctx.STRINGVALUE()" language="JAVA" custom="" />
+        <watch expression="ctx.NAME()" language="JAVA" custom="" />
+        <watch expression="ctx.BOOLEANVALUE()" language="JAVA" custom="" />
       </configuration>
     </watches-manager>
   </component>
@@ -910,361 +1993,253 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/fluid/BlockAntiprotons.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/util/ResourceLocationHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="10" />
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/fluid/BlockLiquidHelium3.java">
+    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/util/ResourceLocation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/fluid/BlockLiquidHydrogen.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/render/model/ModelSphere.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/fluid/BlockLiquidOxygen.java">
+    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraftforge/client/model/IModelCustomLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/fluid/BlockPressurizedFluid.java">
+    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraftforge/client/model/AdvancedModelLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/OpenModsLib/src/main/java/openmods/core/OpenModsClassTransformer.java">
+    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraftforge/client/model/obj/ObjModelLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="234" column="24" selection-start-line="234" selection-start-column="24" selection-end-line="234" selection-end-column="24" />
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/fluid/BlockLiquidDeuterium.java">
+    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraftforge/client/model/obj/WavefrontObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+          <caret line="54" column="95" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="95" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerMachineBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5430017">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerAlloyMixer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/slots/SlotBattery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/slots/AirshipsSlot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/slots/SlotOutput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17200674">
-          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/slots/SlotLiquidContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/slots/SlotProbe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentProgressBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="74" selection-start-line="84" selection-start-column="74" selection-end-line="84" selection-end-column="74" />
-          <folding>
-            <element signature="e#1561#1562#0" expanded="true" />
-            <element signature="e#1594#1595#0" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
-            <element signature="e#1683#1684#0" expanded="true" />
-            <element signature="e#4258#4259#0" expanded="true" />
-            <element signature="e#4286#4287#0" expanded="true" />
-            <element signature="e#4330#4331#0" expanded="true" />
-            <element signature="e#4359#4360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/inventory/ISidedInventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiOpenAlloyMixer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/nbt/NBTTagCompound.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="342" column="71" selection-start-line="342" selection-start-column="71" selection-end-line="342" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/OpenModsLib/src/main/java/openmods/inventory/GenericInventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="121" column="43" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/SyncableCoord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/SyncableItemStack.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/CrazyGUIBaseListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/SyncableEnergyStorage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4/4.5/antlr4-4.5-sources.jar!/org/antlr/v4/runtime/tree/ParseTreeVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.28176796">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/network/play/server/S30PacketWindowItems.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/CrazyGUIVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.25828728">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/client/network/NetHandlerPlayClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiAlloyMixer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1195" column="0" selection-start-line="1195" selection-start-column="0" selection-end-line="1196" selection-end-column="0" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/inventory/Slot.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4/4.5/antlr4-4.5-sources.jar!/org/antlr/v4/runtime/ParserRuleContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="16" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
+          <caret line="194" column="24" selection-start-line="194" selection-start-column="24" selection-end-line="194" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/inventory/Container.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/CrazyGUIBaseVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.586207">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="115" selection-start-line="27" selection-start-column="115" selection-end-line="27" selection-end-column="115" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/OpenModsLib/src/main/java/openmods/container/ContainerBase.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4/4.5/antlr4-4.5-sources.jar!/org/antlr/v4/runtime/tree/ParseTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4930939">
+          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/OpenModsLib/src/main/java/openmods/container/ContainerInventoryProvider.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4/4.5/antlr4-4.5-sources.jar!/org/antlr/v4/runtime/tree/AbstractParseTreeVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <caret line="132" column="16" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
+          <folding>
+            <element signature="e#4888#4889#0" expanded="false" />
+            <element signature="e#4912#4913#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/OpenModsLib/src/main/java/openmods/gui/ComponentGui.java">
+    <entry file="file://$PROJECT_DIR$/lib/src/OpenModsLib/src/main/java/openmods/gui/SyncedGuiContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/client/gui/inventory/GuiContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6896553">
+          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/OpenModsLib/src/main/java/openmods/gui/BaseGuiContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/world/World.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityGuiTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="803" column="0" selection-start-line="803" selection-start-column="0" selection-end-line="803" selection-end-column="0" />
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2095#2096#0" expanded="false" />
+            <element signature="e#2180#2181#0" expanded="false" />
+            <element signature="e#4278#4279#0" expanded="false" />
+            <element signature="e#4310#4311#0" expanded="false" />
+            <element signature="e#4353#4354#0" expanded="false" />
+            <element signature="e#4394#4395#0" expanded="false" />
+            <element signature="e#4445#4446#0" expanded="false" />
+            <element signature="e#4494#4495#0" expanded="false" />
+            <element signature="e#4529#4530#0" expanded="false" />
+            <element signature="e#4569#4570#0" expanded="false" />
+            <element signature="e#4600#4601#0" expanded="false" />
+            <element signature="e#4636#4637#0" expanded="false" />
+            <element signature="e#4683#4684#0" expanded="false" />
+            <element signature="e#4718#4719#0" expanded="false" />
+            <element signature="e#4974#4975#0" expanded="false" />
+            <element signature="e#5015#5016#0" expanded="false" />
+            <element signature="e#5066#5067#0" expanded="false" />
+            <element signature="e#5140#5141#0" expanded="false" />
+            <element signature="e#5203#5204#0" expanded="false" />
+            <element signature="e#5244#5245#0" expanded="false" />
+            <element signature="e#6050#6051#0" expanded="false" />
+            <element signature="e#6123#6124#0" expanded="false" />
+            <element signature="e#6355#6356#0" expanded="false" />
+            <element signature="e#6382#6383#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/multiblock/BlockMultiblockPart.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/GuiAirshipsContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="e#1038#1039#0" expanded="false" />
+            <element signature="e#1066#1067#0" expanded="false" />
+            <element signature="e#1104#1105#0" expanded="false" />
+            <element signature="e#1132#1133#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityAlloyMixer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1913#1914#0" expanded="false" />
+            <element signature="e#1998#1999#0" expanded="false" />
+            <element signature="e#4087#4088#0" expanded="false" />
+            <element signature="e#4128#4129#0" expanded="false" />
+            <element signature="e#4179#4180#0" expanded="false" />
+            <element signature="e#4228#4229#0" expanded="false" />
+            <element signature="e#4263#4264#0" expanded="false" />
+            <element signature="e#4303#4304#0" expanded="false" />
+            <element signature="e#4334#4335#0" expanded="false" />
+            <element signature="e#4370#4371#0" expanded="false" />
+            <element signature="e#4417#4418#0" expanded="false" />
+            <element signature="e#4452#4453#0" expanded="false" />
+            <element signature="e#4708#4709#0" expanded="false" />
+            <element signature="e#4749#4750#0" expanded="false" />
+            <element signature="e#4800#4801#0" expanded="false" />
+            <element signature="e#4874#4875#0" expanded="false" />
+            <element signature="e#4937#4938#0" expanded="false" />
+            <element signature="e#4978#4979#0" expanded="false" />
+            <element signature="e#5447#5448#0" expanded="false" />
+            <element signature="e#5517#5518#0" expanded="false" />
+            <element signature="e#5743#5744#0" expanded="false" />
+            <element signature="e#5770#5771#0" expanded="false" />
+            <element signature="e#6925#6926#0" expanded="false" />
+            <element signature="e#6957#6958#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/CrazyGUIParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="196" column="24" selection-start-line="196" selection-start-column="24" selection-end-line="196" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/ContainerEezoCoreBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiCeramicFormer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#655#656#0" expanded="false" />
-            <element signature="e#682#683#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/ContainerLaunchPadMultiblock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityEezoCoreMultiblock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="325" column="42" selection-start-line="325" selection-start-column="42" selection-end-line="325" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2621#2622#0" expanded="false" />
-            <element signature="e#2663#2664#0" expanded="false" />
-            <element signature="e#2712#2713#0" expanded="false" />
-            <element signature="e#2778#2779#0" expanded="false" />
-            <element signature="e#2926#2927#0" expanded="false" />
-            <element signature="e#2966#2967#0" expanded="false" />
-            <element signature="e#3029#3030#0" expanded="false" />
-            <element signature="e#3079#3080#0" expanded="false" />
-            <element signature="e#3115#3116#0" expanded="false" />
-            <element signature="e#3148#3149#0" expanded="false" />
-            <element signature="e#3487#3488#0" expanded="false" />
-            <element signature="e#3525#3526#0" expanded="false" />
-            <element signature="e#3554#3555#0" expanded="false" />
-            <element signature="e#3601#3602#0" expanded="false" />
-            <element signature="e#3631#3632#0" expanded="false" />
-            <element signature="e#3666#3667#0" expanded="false" />
-            <element signature="e#4555#4556#0" expanded="false" />
-            <element signature="e#4619#4620#0" expanded="false" />
-            <element signature="e#4665#4666#0" expanded="false" />
-            <element signature="e#4693#4694#0" expanded="false" />
-            <element signature="e#4739#4740#0" expanded="false" />
-            <element signature="e#4784#4785#0" expanded="false" />
-            <element signature="e#5046#5047#0" expanded="false" />
-            <element signature="e#5078#5079#0" expanded="false" />
-            <element signature="e#9212#9213#0" expanded="false" />
-            <element signature="e#9284#9285#0" expanded="false" />
-            <element signature="e#9514#9515#0" expanded="false" />
-            <element signature="e#9541#9542#0" expanded="false" />
-            <element signature="e#9726#9727#0" expanded="false" />
-            <element signature="e#9791#9792#0" expanded="false" />
-            <element signature="e#9824#9825#0" expanded="false" />
-            <element signature="e#9852#9853#0" expanded="false" />
-            <element signature="e#9901#9902#0" expanded="false" />
-            <element signature="e#9935#9936#0" expanded="false" />
-            <element signature="e#10105#10106#0" expanded="false" />
-            <element signature="e#10137#10138#0" expanded="false" />
-            <element signature="e#10197#10198#0" expanded="false" />
-            <element signature="e#10230#10231#0" expanded="false" />
-            <element signature="e#10709#10710#0" expanded="false" />
-            <element signature="e#10734#10735#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityMultiblockPart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#916#917#0" expanded="false" />
-            <element signature="e#961#962#0" expanded="false" />
-            <element signature="e#1160#1161#0" expanded="false" />
-            <element signature="e#1192#1193#0" expanded="false" />
-            <element signature="e#1380#1381#0" expanded="false" />
-            <element signature="e#1407#1408#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/GuiLaunchPadMultiblock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="80" selection-start-line="27" selection-start-column="80" selection-end-line="27" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1883#1884#0" expanded="false" />
-            <element signature="e#1925#1926#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/INeighborPlacedAware.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_40/src.zip!/java/lang/NumberFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/lib/src/OpenModsLib/src/main/java/openmods/gui/ComponentGui.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1272,92 +2247,245 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/AirshipsContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/GuiAirshipsContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/multiblock/MultiblockStructure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
-            <element signature="e#1007#1039#0" expanded="true" />
-            <element signature="e#1176#1233#0" expanded="true" />
-            <element signature="e#1407#1408#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="false" />
+            <element signature="e#769#770#0" expanded="false" />
+            <element signature="e#1069#1070#0" expanded="false" />
+            <element signature="e#1107#1108#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityLaunchPadMultiblock.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/IHasCustomLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="281" column="0" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/GuiEezoCoreBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/test/GuiMachineBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-          <folding />
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1249#1250#0" expanded="false" />
+            <element signature="e#1298#1299#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/.gitignore">
+    <entry file="file://$PROJECT_DIR$/lib/src/OpenModsLib/src/main/java/openmods/container/ContainerBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+          <folding>
+            <element signature="e#1983#1984#0" expanded="false" />
+            <element signature="e#2025#2026#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20236088">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gradle/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/antlr/CrazyGUI.g4">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eclipse/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerMachineBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiMachineBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/render/tileentity/TileEntityEezoCoreBaseRenderer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentProgressBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33389544">
-          <caret line="108" column="75" selection-start-line="108" selection-start-column="75" selection-end-line="108" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding>
+            <element signature="e#1236#1237#0" expanded="true" />
+            <element signature="e#1263#1264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/sync/IMonitoredComposite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21030928">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/IXAMLGuiComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/masseffectships/lang/en_US.lang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentTooltip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/build/dirtyArtifacts/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/client/gui/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/reference/Colors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerElectrolyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/multiblock/GuiLaunchPadMultiblock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="132" selection-start-line="57" selection-start-column="132" selection-end-line="57" selection-end-column="132" />
+          <folding>
+            <element signature="e#4007#4008#0" expanded="true" />
+            <element signature="e#4049#4050#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/CrazyContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/ContainerDeuteriumExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/machine/GuiDeuteriumExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/antlr/GuiVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="179" column="62" selection-start-line="179" selection-start-column="62" selection-end-line="179" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/block/tileentity/TileEntityElectrolyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="142" column="24" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="24" />
+          <folding>
+            <element signature="e#5336#5337#0" expanded="true" />
+            <element signature="e#5368#5369#0" expanded="true" />
+            <element signature="e#5413#5414#0" expanded="true" />
+            <element signature="e#5447#5448#0" expanded="true" />
+            <element signature="e#5492#5493#0" expanded="true" />
+            <element signature="e#5526#5527#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/test/AbstractGuiElectrolyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/MassEffectShips.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentEnergyGauge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/octagon/airships/client/gui/components/GuiComponentFluidGauge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+          <folding>
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="e#3612#3613#0" expanded="true" />
+            <element signature="e#3642#3643#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/masseffectships/gui/electrolyzer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.036324788">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1420,6 +2548,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1428,7 +2557,7 @@
       <state key="ProjectJDKs.UI" />
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>CoFHCore-[1.7.10]3.0.0RC7-211</last-edited>
+          <last-edited>org.antlr:antlr4:4.5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

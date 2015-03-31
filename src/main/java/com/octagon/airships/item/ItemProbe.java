@@ -12,7 +12,7 @@ import net.minecraft.util.StatCollector;
 import java.util.List;
 
 public class ItemProbe extends AirshipsItem {
-    public static enum Type {
+    public enum Type {
         EMPTY("empty"),
         MINING("mining"),
         GAS("gas");
@@ -20,7 +20,7 @@ public class ItemProbe extends AirshipsItem {
         public final String unlocalizedName;
         public final String iconName;
 
-        private Type(String name) {
+        Type(String name) {
             this.unlocalizedName = name;
             this.iconName = Reference.MOD_ID + ":probe_" + name;
         }
@@ -31,6 +31,7 @@ public class ItemProbe extends AirshipsItem {
     public ItemProbe(Type probeType) {
         type = probeType;
         this.setHasSubtypes(true);
+        setMaxStackSize(probeType == Type.EMPTY ? 64 : 1);
     }
 
     @Override
@@ -50,9 +51,13 @@ public class ItemProbe extends AirshipsItem {
     }
 
     @Override
+    @SuppressWarnings({"unchecked"})
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4)
     {
-        if(type != Type.EMPTY) list.add(StatCollector.translateToLocal(String.format("item.masseffectships.probe.%s.name", type.unlocalizedName)));
-        else list.add(StatCollector.translateToLocal("masseffectships.misc.empty"));
+        list.add(StatCollector.translateToLocal(String.format("item.masseffectships.probe.%s.name", type.unlocalizedName)));
+    }
+
+    public Type getType() {
+        return type;
     }
 }
