@@ -13,8 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GuiComponentFluidGauge extends BaseComponent implements IValueChangedListener<FluidStack> {
-    private int width;
-    private int height;
+    private int width = 14;
+    private int height = 30;
     private MonitoredTank tank;
     private GuiComponentTooltip tooltip;
     private float progress;

@@ -10,11 +10,11 @@ import openmods.api.IValueReceiver;
 import openmods.gui.component.BaseComponent;
 
 public class GuiComponentProgressBar extends BaseComponent {
-    private float progress;
-    private int width;
-    private int height;
-    private Orientation orientation;
-    private boolean invert;
+    private float progress = 0;
+    private int width = 14;
+    private int height = 40;
+    private Orientation orientation = Orientation.VERTICAL;
+    private boolean invert = false;
     private ResourceLocation activeTexture = null;
     private ResourceLocation backgroundTexture = null;
     private int activeTextureX;
@@ -169,9 +169,5 @@ public class GuiComponentProgressBar extends BaseComponent {
 
     public void setOrientation(Orientation orientation) {
         this.orientation = orientation;
-    }
-
-    public void setOrientation(String value) {
-        this.orientation = value.equalsIgnoreCase("horizontal") ? Orientation.HORIZONTAL : Orientation.VERTICAL;
     }
 }

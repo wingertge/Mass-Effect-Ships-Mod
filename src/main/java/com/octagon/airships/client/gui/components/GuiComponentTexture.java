@@ -5,13 +5,11 @@ import net.minecraft.util.ResourceLocation;
 import openmods.gui.component.BaseComponent;
 
 public class GuiComponentTexture extends BaseComponent {
-
-
     private ResourceLocation texture;
-    private int xStart;
-    private int yStart;
-    private int width;
-    private int height;
+    private int xStart = 0;
+    private int yStart = 0;
+    private int width = 0;
+    private int height = 0;
 
     public GuiComponentTexture(ResourceLocation texture, int x, int y, int xStart, int yStart, int width, int height) {
         super(x, y);

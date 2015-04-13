@@ -747,5 +747,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="org.antlr:antlr4:4.5" level="project" />
+    <orderEntry type="module" module-name="CrazyGUI" exported="" />
   </component>
 </module>

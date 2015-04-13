@@ -1,22 +1,18 @@
 package com.octagon.airships.client.gui.components;
 
-import com.octagon.airships.util.LogHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
-import net.minecraft.client.renderer.RenderHelper;
 import openmods.gui.component.BaseComponent;
-import org.lwjgl.opengl.GL11;
-import org.lwjgl.opengl.GL12;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class GuiComponentTooltip extends BaseComponent {
 
-    private final int xMin;
-    private final int yMin;
-    private final int xMax;
-    private final int yMax;
+    private int xMin = 0;
+    private int yMin = 0;
+    private int xMax = 0;
+    private int yMax = 0;
     private int width;
     private int height;
     private FontRenderer fontRenderer;

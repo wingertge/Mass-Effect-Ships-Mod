@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GuiComponentEnergyGauge extends BaseComponent implements IValueChangedListener<Integer> {
-    protected int width;
-    protected int height;
+    protected int width = 14;
+    protected int height = 30;
     private SyncableEnergyStorage energyStorage;
     protected float progress;
     private GuiComponentTooltip tooltip;

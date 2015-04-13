@@ -81,7 +81,7 @@ public class MassEffectShips {
         proxy.preInit();
 
         try {
-            CrazyGUILexer guiLexer = new CrazyGUILexer(new ANTLRInputStream(Minecraft.getMinecraft().getResourceManager().getResource(ResourceLocationHelper.getResourceLocation("gui/electrolyzer.xml")).getInputStream()));
+            CrazyGUILexer guiLexer = new CrazyGUILexer(new ANTLRInputStream(Minecraft.getMinecraft().getResourceManager().getResource(ResourceLocationHelper.getResourceLocation("gui/electrolyzer.cxml")).getInputStream()));
             CrazyGUIParser guiParser = new CrazyGUIParser(new CommonTokenStream(guiLexer));
 
             ParseTree tree = guiParser.tag();
