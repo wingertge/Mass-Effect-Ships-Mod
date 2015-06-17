@@ -23,7 +23,7 @@ group= "com.octagon.airships" // http://maven.apache.org/guides/mini/guide-namin
 archivesBaseName = "MassEffectShips"
 
 minecraft {
-    version = "1.7.10-10.13.2.1291"
+    version = "1.7.10-10.13.4.1448-1.7.10"
     runDir = "eclipse"
 }
 
@@ -38,9 +38,7 @@ repositories {
 
 dependencies {
     compile "com.mod-buildcraft:buildcraft:6.4.3:api"
-    compile "mcp.mobius.waila:Waila:1.5.9_dev1_1.7.10"
-    compile "com.gameminers:glasspane:1.0:dev"
-    compile "com.gameminers:kitchensink:1.0:dev"
+    compile "mcp.mobius.waila:Waila:1.5.10_1.7.10"
     antlr "org.antlr:antlr4:4.5"
 }
 

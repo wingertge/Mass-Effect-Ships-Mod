@@ -169,34 +169,6 @@
       </item>
     </group>
   </component>
-  <component name="ProjectDictionaryState">
-    <dictionary name="Benni">
-      <words>
-        <w>alloymixer</w>
-        <w>antiprotons</w>
-        <w>barebones</w>
-        <w>codevalue</w>
-        <w>compiletime</w>
-        <w>coord</w>
-        <w>crafter</w>
-        <w>crazygui</w>
-        <w>crazypants</w>
-        <w>cxml</w>
-        <w>decapitalize</w>
-        <w>deuteriumliquid</w>
-        <w>electrolyzer</w>
-        <w>infos</w>
-        <w>intvalue</w>
-        <w>minecraft</w>
-        <w>openapi</w>
-        <w>openmods</w>
-        <w>stringvalue</w>
-        <w>tileentity</w>
-        <w>unlocalized</w>
-        <w>unsubscribe</w>
-      </words>
-    </dictionary>
-  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../CrazyGUI/CrazyGUI.iml" filepath="$PROJECT_DIR$/../CrazyGUI/CrazyGUI.iml" />
@@ -205,72 +177,14 @@
       <module fileurl="file://$PROJECT_DIR$/MassEffectShips.iml" filepath="$PROJECT_DIR$/MassEffectShips.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SvnBranchConfigurationManager">
     <option name="mySupportsUserInfoFilter" value="true" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../CrazyGUI" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-  </component>
-  <component name="libraryTable">
-    <library name="decompile">
-      <CLASSES>
-        <root url="jar://$PROJECT_DIR$/../CrazyGUI/build/tmp/decompile/forge-1.7.10-10.13.2.1291-srg.jar.patched.jar!/" />
-        <root url="jar://$PROJECT_DIR$/../CrazyGUI/build/tmp/decompile/forge-1.7.10-10.13.2.1291-srg.jar!/" />
-        <root url="jar://$PROJECT_DIR$/../CrazyGUI/build/tmp/decompile/forge-1.7.10-10.13.2.1291-srg.jar.fixed.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-    </library>
-    <library name="deobfed">
-      <CLASSES>
-        <root url="jar://$PROJECT_DIR$/../CrazyGUI/build/tmp/deobfuscateJar/deobfed.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-    </library>
-    <library name="gradle-wrapper">
-      <CLASSES>
-        <root url="jar://$PROJECT_DIR$/../CrazyGUI/CrazyGUIantlr/gradle/wrapper/gradle-wrapper.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-    </library>
-    <library name="gradle-wrapper1">
-      <CLASSES>
-        <root url="jar://$PROJECT_DIR$/../CrazyGUI/gradle/wrapper/gradle-wrapper.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-    </library>
-    <library name="JFlex">
-      <CLASSES>
-        <root url="jar://$PROJECT_DIR$/../CrazyGUI/JFlex.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-    </library>
-    <library name="org.antlr:antlr4:4.5" type="repository">
-      <properties maven-id="org.antlr:antlr4:4.5" />
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4/4.5/antlr4-4.5.jar!/" />
-        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.5/antlr4-runtime-4.5.jar!/" />
-        <root url="jar://$MAVEN_REPOSITORY$/org/abego/treelayout/org.abego.treelayout.core/1.0.1/org.abego.treelayout.core-1.0.1.jar!/" />
-        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar!/" />
-        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/ST4/4.0.8/ST4-4.0.8.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4/4.5/antlr4-4.5-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4/4.5/antlr4-4.5-sources.jar!/" />
-      </SOURCES>
-    </library>
-  </component>
-  <component name="uidesigner-configuration">
-    <option name="DEFAULT_LAYOUT_MANAGER" value="BorderLayout" />
   </component>
 </project>

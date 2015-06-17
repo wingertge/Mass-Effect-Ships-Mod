@@ -7,11 +7,13 @@
 ****************************
 Found AccessTransformer in main resources: MassEffectShips_at.cfg
 :ideaModule
-Download http://chickenbones.net/maven/codechicken/NotEnoughItems/1.7.10-1.0.4.94/NotEnoughItems-1.7.10-1.0.4.94-dev.jar
+Download http://mobiusstrip.eu/maven/mcp/mobius/waila/Waila/1.5.10_1.7.10/Waila-1.5.10_1.7.10.pom
+Download http://mobiusstrip.eu/maven/mcp/mobius/waila/Waila/1.5.10_1.7.10/Waila-1.5.10_1.7.10.jar
+Download http://mobiusstrip.eu/maven/mcp/mobius/waila/Waila/1.5.10_1.7.10/Waila-1.5.10_1.7.10-sources.jar
 :ideaProject
 :ideaWorkspace
 :idea
 
 BUILD SUCCESSFUL
 
-Total time: 1 mins 1.977 secs
+Total time: 1 mins 27.044 secs
